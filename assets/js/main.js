@@ -134,21 +134,7 @@ $(document).ready(function() {
         }
     });
     
-    // Back to top button
-    var backToTop = $('<button id="backToTop" style="position: fixed; bottom: 20px; right: 20px; background: var(--primary-color); color: white; border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; display: none; z-index: 1000;"><i class="fas fa-arrow-up"></i></button>');
-    $('body').append(backToTop);
-    
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 300) {
-            backToTop.fadeIn();
-        } else {
-            backToTop.fadeOut();
-        }
-    });
-    
-    backToTop.click(function() {
-        $('html, body').animate({scrollTop: 0}, 800);
-    });
+     
 });
 
 // Additional CSS for animations
