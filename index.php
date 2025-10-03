@@ -24,11 +24,10 @@
     
     <!-- Header Menu -->
     <?php include 'includes/header-menu.php'; ?>
-    
+   
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="hero-background" id="heroBackground"></div>
-        <div class="hero-overlay"></div>
+        <!-- <div class="hero-overlay"></div> -->
         <div class="hero-content">
             <h1>Find Your Perfect Match</h1>
             <p>Connect with top freelancers or discover amazing opportunities. Whether you're hiring talent or looking for work, we've got you covered.</p>

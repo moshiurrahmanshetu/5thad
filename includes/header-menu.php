@@ -3,10 +3,9 @@
 ?>
 <div class="header-menu">
     <div class="container">
-        <a href="index.php" class="logo">FreelanceHub</a>
-        
+        <a href="index.php" class="header-logo"><img src="assets/images/bg.png" alt="5ThAD"></a>
         <nav class="nav-menu" id="navMenu">
-            <ul>
+            <ul class="nav-menu-list">
                 <li>
                     <a href="#" class="dropdown-toggle">Advertiser</a>
                     <ul class="dropdown">

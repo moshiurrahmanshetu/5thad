@@ -1,24 +1,66 @@
 // Main JavaScript functionality
 $(document).ready(function() {
     
-    // Hero Background Image Rotation
     const heroImages = [
         'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
         'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
         'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'
     ];
-    
+
     let currentImageIndex = 0;
-    const heroBackground = $('#heroBackground');
-    
-    // Set initial background
-    heroBackground.css('background-image', `url('${heroImages[0]}')`);
-    
-    // Rotate images every 3 seconds
-    setInterval(function() {
+    let isTransitioning = false;
+
+    // Create multiple background layers for smooth transitions
+    function createBackgroundLayers() {
+        const heroSection = $('.hero-section');
+        
+        // Remove existing background layers
+        heroSection.find('.hero-background').remove();
+        
+        // Create two background layers
+        for (let i = 0; i < 2; i++) {
+            const backgroundLayer = $('<div class="hero-background"></div>');
+            if (i === 0) {
+                backgroundLayer.addClass('active');
+            }
+            heroSection.append(backgroundLayer);
+        }
+    }
+
+    // Initialize background layers
+    createBackgroundLayers();
+
+    // Set initial image
+    $('.hero-background.active').css('background-image', `url('${heroImages[0]}')`);
+
+    // Smooth fade transition function
+    function transitionToNextImage() {
+        if (isTransitioning) return;
+        
+        isTransitioning = true;
         currentImageIndex = (currentImageIndex + 1) % heroImages.length;
-        heroBackground.css('background-image', `url('${heroImages[currentImageIndex]}')`);
-    }, 3000);
+        const nextImage = heroImages[currentImageIndex];
+        
+        const activeLayer = $('.hero-background.active');
+        const inactiveLayer = $('.hero-background').not('.active');
+        
+        // Set the new image to the inactive layer
+        inactiveLayer.css('background-image', `url('${nextImage}')`);
+        
+        // Fade out active layer and fade in inactive layer
+        activeLayer.addClass('fade-out');
+        inactiveLayer.addClass('fade-in');
+        
+        // After transition completes, swap the layers
+        setTimeout(() => {
+            activeLayer.removeClass('active fade-out');
+            inactiveLayer.removeClass('fade-in').addClass('active');
+            isTransitioning = false;
+        }, 1500); // Match CSS transition duration
+    }
+
+    // Start the image rotation
+    setInterval(transitionToNextImage, 4000); // Change every 4 seconds
     
     // Mobile Menu Toggle
     $('#mobileMenuToggle').click(function() {
@@ -62,10 +104,10 @@ $(document).ready(function() {
     // Dropdown functionality for desktop
     $('.nav-menu li').hover(
         function() {
-            $(this).find('.dropdown').stop(true, true).fadeIn(300);
+            $(this).find('.dropdown').stop(true, true).fadeIn(200);
         },
         function() {
-            $(this).find('.dropdown').stop(true, true).fadeOut(300);
+            $(this).find('.dropdown').stop(true, true).fadeOut(100);
         }
     );
     
