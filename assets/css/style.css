@@ -4,7 +4,7 @@
     --ad-pr-cl-deep: #fe7123;
     --ad-sec-cl: #2c3e50;
     --ad-text-light: #7f8c8d;
-    --ad-light: #e4e2e2;
+    --ad-light: #ebebeb;
     --ad-white: #ffffff;
     --ad-black: #000000;
     --ad-light-dark: #000000f0;
@@ -13,7 +13,7 @@
     --ad-shadow-medium: 0 4px 8px rgba(0,0,0,0.15);
     --ad-shadow-heavy: 0 8px 16px rgba(0,0,0,0.2);
     --ad-gradient-bg: linear-gradient(135deg, #2c3e50, #b74b11);
-    --ad-gradient-secondary: linear-gradient(135deg, #2c3e50, #34495e);
+    --ad-ref-grd-bg: linear-gradient(135deg, #2c3e50 0%, #584b0b 100%);
 }
 
 /* Reset and Base Styles */
@@ -39,6 +39,9 @@ ul, ol, li {
 ul {
     margin: 0;
     padding: 0;
+}
+.img-responsive{
+    max-width: 100%;
 }
 /* Header Styles */
 .header-topbar {
@@ -366,6 +369,134 @@ ul {
     color: var(--ad-text-light);
     line-height: 1.6;
 }
+
+/* Referral Section Start */
+    .referral-section {
+        padding: 60px 0 40px 0;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background: var(--ad-ref-grd-bg);
+    }
+
+    @media screen and (max-width: 900px) {
+        .referral-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .referral-graphic {
+            margin-top: 30px;
+        }
+    }
+/* referral section end  */
+/* payment section start  */
+.payment-section {
+        padding: 60px 0 40px 0;
+        background: var(--ad-light);
+    }
+
+ .payment-section .card {
+        color: white;
+        background-color: #2a292d;
+        border-radius: 10px;
+        position: relative;
+        box-sizing: border-box;
+        padding: 24px;
+        display: grid;
+        margin-bottom: 24px;
+        grid-template-rows: 1fr auto;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        box-shadow: 0 0px 8px rgba(0, 0, 0, 0.12), 0 2px 16px rgba(0, 0, 0, 0.12), 0 4px 20px rgba(0, 0, 0, 0.12), 0 12px 28px rgba(0, 0, 0, 0.12);
+        color: white;
+        max-height: 130px !important;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .card.digital:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.9), 0 1px 0 0 rgba(0, 0, 0, 0.2);
+        position: absolute;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .card.digital:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: linear-gradient(120deg, rgba(255, 255, 255, 0.02) 30%, rgba(255, 255, 255, 0.25) 40%, rgba(255, 255, 255, 0.08) 40%), linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+        background-size: 150% 150%;
+        animation: cardGradient 10s ease-in-out infinite;
+        position: absolute;
+    }
+    .card-image{
+        margin-bottom: 10px;
+    }
+    .card:hover{
+        transform: translateY(-6px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.2), 0 24px 48px rgba(0, 0, 0, 0.2);
+
+    }
+    .card:hover .digital:after {
+        border: 1px solid var(--ad-pr-cl);
+        animation: cardGradient 7s ease-in-out infinite;
+    }
+
+    @keyframes cardGradient {
+        0% {
+            background-position: 0% 10%;
+        }
+
+        50% {
+            background-position: 100% 91%;
+        }
+
+        100% {
+            background-position: 0% 10%;
+        }
+    }
+
+    .payment-section .card.digital {
+        background-image: url('/assets/images/buttercup.jpg');
+    }
+
+    .payment-section .card.digital {
+        animation-name: cardAnimation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        color: black;
+        position: relative;
+        color: #1a1d21;
+    }
+    .card.digital .card-image img{
+        height: 40px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+         .card.digital {
+            background-size: 420px 327px;
+         }
+    }
+    @media screen and (min-width: 426px) and (max-width: 575px) {
+        .card.digital {
+            background-size: 660px 277px;
+        }
+    }
+   @media screen and (min-width: 768px) {
+        .card.digital {
+            background-size: 130% 250%;
+        }
+    }
+    @media screen and (min-width: 768px) {
+    .order-sm-12 {
+        order: 12;
+    }
+}
+
+/* payment section end  */
 
 /* Footer */
 .footer {
