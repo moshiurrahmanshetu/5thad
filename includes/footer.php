@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p><b>9,57,825</b> Registered Users</p>
+            <p><b>25,57,825</b> Registered Users</p>
             <p>&copy; 2025 5ThAD. All rights reserved.</p>
         </div>
     </div>

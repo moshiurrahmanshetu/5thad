@@ -21,12 +21,69 @@
     </div>
 </section>
 
-<!-- Features Section -->
-<section class="section">
+<!-- Stats Section -->
+<section class="infograph-section">
     <div class="container">
-        <h2>Why Choose FreelanceHub?</h2>
-        <p>We provide the tools and platform you need to succeed in the freelance economy.</p>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="infograph-card">
+                    <div class="dot"></div>
+                    <i class="fas fa-users" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    <h3 class="count" data-target="2000000" style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">2M+</h3>
+                    <p>Active Users</p>
+                    <div class="line topl"></div>
+                    <div class="line leftl"></div>
+                    <div class="line bottoml"></div>
+                    <div class="line rightl"></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="infograph-card">
+                    <div class="dot"></div>
+                    <i class="fas fa-briefcase" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    <h3 class="count" data-target="500000" style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">500K+</h3>
+                    <p>Projects Completed</p>
+                    <div class="line topl"></div>
+                    <div class="line leftl"></div>
+                    <div class="line bottoml"></div>
+                    <div class="line rightl"></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="infograph-card">
+                    <div class="dot"></div>
+                    <i class="fas fa-dollar-sign" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    <h3 class="count" data-target="50000000" style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">$50M+</h3>
+                    <p>Earned by Freelancers</p>
+                    <div class="line topl"></div>
+                    <div class="line leftl"></div>
+                    <div class="line bottoml"></div>
+                    <div class="line rightl"></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="infograph-card">
+                    <div class="dot"></div>
+                    <i class="fas fa-star" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    <h3 class="count" data-target="4.9" style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">4.9/5</h3>
+                    <p>Average Rating</p>
+                    <div class="line topl"></div>
+                    <div class="line leftl"></div>
+                    <div class="line bottoml"></div>
+                    <div class="line rightl"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Features Section -->
+<section class="why-choose-section py-5" style="background-image: url('assets/images/why-choose-bg.jpg');">
+    <div class="container">
+        <div class="choose-section-top text-center">
+            <h2>Why Choose <span>5ThAD?</span></h2>
+        <p>We provide the tools and platform you need to succeed in the freelance economy.</p>
+        </div>
         <div class="features-grid">
             <div class="feature-card">
                 <i class="fas fa-search"></i>
@@ -101,46 +158,6 @@
     </div>
 </section>
 
-<!-- Stats Section -->
-<section class="section">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-3 col-sm-6 mb-4">
-                <div class="feature-card">
-                    <i class="fas fa-users" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    <h3 style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">2M+</h3>
-                    <p>Active Users</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 mb-4">
-                <div class="feature-card">
-                    <i class="fas fa-briefcase" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    <h3 style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">500K+</h3>
-                    <p>Projects Completed</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 mb-4">
-                <div class="feature-card">
-                    <i class="fas fa-dollar-sign" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    <h3 style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">$50M+</h3>
-                    <p>Earned by Freelancers</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 mb-4">
-                <div class="feature-card">
-                    <i class="fas fa-star" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    <h3 style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">4.9/5</h3>
-                    <p>Average Rating</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <!-- Referral Section -->
 <section class="section referral-section">
     <div class="container">
@@ -149,7 +166,7 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="referral-text mb-4">
                         <h2 class="text-white" style="font-weight: 700; font-size: 2.2rem; margin-bottom: 10px; letter-spacing: 1px;">Refer &amp; Earn <span style="color: #ebbd05ff;">10% Commission</span></h2>
-                        <p class="text-white" style="font-size: 1.1rem; margin-bottom: 20px;">Invite your friends to FreelanceHub and earn 10% commission on their earnings. Share your unique referral link and start earning today!</p>
+                        <p class="text-white" style="font-size: 1.1rem; margin-bottom: 20px;">Invite your friends to 5ThAD and earn 10% commission on their earnings. Share your unique referral link and start earning today!</p>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">
@@ -288,18 +305,63 @@
             new IntersectionObserver(animateOnScroll, observerOptions).observe(el);
         });
     });
+ 
 
-    // Copy referral link
-    function copyReferralLink() {
-        const input = document.querySelector('.referral-link');
-        input.select();
-        input.setSelectionRange(0, 99999);
-        document.execCommand('copy');
-        document.getElementById('copy-msg').style.display = 'inline';
-        setTimeout(() => {
-            document.getElementById('copy-msg').style.display = 'none';
-        }, 1500);
-    }
+    document.addEventListener("DOMContentLoaded", function() {
+        const counters = document.querySelectorAll(".count");
+        let started = false; // run only once
+
+        function startCounting() {
+            if (started) return; // prevent rerun
+            started = true;
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute("data-target");
+                const duration = 3000; // total time in ms
+                const step = target / (duration / 20);
+
+                let count = 0;
+                const timer = setInterval(() => {
+                    count += step;
+                    if (count >= target) {
+                        clearInterval(timer);
+                        // Format with +, K, M where needed
+                        if (target >= 1000000) {
+                            counter.innerText = (target / 1000000).toFixed(1) + "M+";
+                        } else if (target >= 1000) {
+                            counter.innerText = (target / 1000).toFixed(1) + "K+";
+                        } else {
+                            counter.innerText = target;
+                        }
+                    } else {
+                        counter.innerText = Math.floor(count);
+                    }
+                }, 20);
+            });
+        }
+
+        // Detect when section is visible
+        window.addEventListener("scroll", function() {
+            const section = document.querySelector(".row.text-center");
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                startCounting();
+            }
+        });
+    });
+
+
+    // function copyReferralLink() {
+    //     const input = document.querySelector('.referral-link');
+    //     input.select();
+    //     input.setSelectionRange(0, 99999);
+    //     document.execCommand('copy');
+    //     document.getElementById('copy-msg').style.display = 'inline';
+    //     setTimeout(() => {
+    //         document.getElementById('copy-msg').style.display = 'none';
+    //     }, 1500);
+    // }
+
 </script>
 
 

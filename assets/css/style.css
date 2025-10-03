@@ -14,6 +14,7 @@
     --ad-shadow-heavy: 0 8px 16px rgba(0,0,0,0.2);
     --ad-gradient-bg: linear-gradient(135deg, #2c3e50, #b74b11);
     --ad-ref-grd-bg: linear-gradient(135deg, #2c3e50 0%, #584b0b 100%);
+    --ad-grd-border: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
 }
 
 /* Reset and Base Styles */
@@ -314,24 +315,89 @@ ul {
     text-decoration: none;
 }
 /* Main Content Sections */
-.section {
-    padding: 80px 0;
+
+.infograph-section, .why-choose-section {
+    padding: 50px 0;
 }
+.infograph-section{
+    background: var(--ad-light);
+}
+.infograph-section .infograph-card {
+ background: var(--ad-grd-border);
+ padding: 25px 13px;
+ border-radius: 1rem;
+ overflow: visible;
+ position: relative;
+text-align: center;
+ z-index: 1;
+}
+.infograph-card p{
+    font-weight: 500;
+}
+.infograph-card .dot {
+  width: 5px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 100px;
+  z-index: 2;
+  right: 10%;
+  top: 10%;
+  animation: moveDot 6s linear infinite;
+}
+
+@keyframes moveDot {
+  0%,
+  100% {
+    top: 7%;
+    right: 7%;
+  }
+  25% {
+    top: 7%;
+    right: calc(100% - 20px);
+  }
+  50% {
+    top: calc(100% - 15px);
+    right: calc(100% - 20px);
+  }
+  75% {
+    top: calc(100% - 25px);
+    right: 7%;
+  }
+}
+
+.infograph-card .line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #2c2c2c;
+}
+.infograph-card .topl {
+    left: 0;
+    top: 7%;
+    background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+}
+.infograph-card .bottoml {
+  bottom: 10%;
+  left: 0;
+}
+.infograph-card .leftl {
+    left: 7%;
+    top: 0%;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+.infograph-card .rightl {
+  right: 7%;
+  width: 1px;
+  top: 0;
+  height: 100%;
+}
+
 .section-light {
     background-color: var(--ad-light);
-}
-.section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: var(--ad-sec-cl);
-}
-.section p {
-    text-align: center;
-    font-size: 1.1rem;
-    color: var(--ad-text-light);
-    max-width: 600px;
-    margin: 0 auto 50px;
 }
 .features-grid {
     display: grid;
@@ -340,35 +406,88 @@ ul {
     margin-top: 50px;
 }
 .feature-card {
-    background: var(--ad-white);
+    background: #8d8d8d70;
+    color: var(--ad-white);
     padding: 40px 30px;
     border-radius: 10px;
+    backdrop-filter: blur(2px);
     text-align: center;
     box-shadow: var(--ad-shadow-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--ad-black);
+    cursor: pointer;
+}
+.feature-card:hover{
+    border: 1px solid var(--ad-pr-cl-deep);
 }
 
+/* background: var(--ad-grd-border);
+ padding: 13px;
+ border-radius: 1rem;
+ overflow: visible;
+ position: relative;
+text-align: center;
+ z-index: 1;
+}
+.feature-card::after {
+ position: absolute;
+ content: "";
+ top: 1%;
+ left: 1%;
+ right: 1%;
+ bottom: 1%;
+ z-index: -1;
+ height: 98%;
+ width: 98%;
+ background: #0a0a0a;
+ border-radius: 1rem;
+ transition: opacity .5s;
+} */
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--ad-shadow-medium);
 }
-
 .feature-card i {
     font-size: 3rem;
     color: var(--ad-pr-cl);
     margin-bottom: 20px;
 }
-
 .feature-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: var(--ad-sec-cl);
+    color: var(--ad-white);
 }
-
 .feature-card p {
-    color: var(--ad-text-light);
+    color: var(--ad-white);
     line-height: 1.6;
 }
+
+/* why choose Section start */
+.why-choose-section, .why-choose-section .container{
+        position: relative;
+        z-index: 2;
+        color: #ffffffff;
+    }
+    .why-choose-section{
+        background-size: cover;
+        background-position: top center;
+    }
+    .why-choose-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.247);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+}
+.choose-section-top span{
+    color: var(--ad-pr-cl);
+}
+
+/* why choose Section end */
 
 /* Referral Section Start */
     .referral-section {
@@ -384,7 +503,6 @@ ul {
             flex-direction: column;
             text-align: center;
         }
-
         .referral-graphic {
             margin-top: 30px;
         }
@@ -395,7 +513,6 @@ ul {
         padding: 60px 0 40px 0;
         background: var(--ad-light);
     }
-
  .payment-section .card {
         color: white;
         background-color: #2a292d;
