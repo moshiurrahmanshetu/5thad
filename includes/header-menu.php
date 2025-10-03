@@ -30,7 +30,7 @@
         </nav>
         
         <div class="header-icons">
-            <a href="account.php" title="Account">
+            <a href="user-dashboard.php" title="Account">
                 <i class="fas fa-user"></i>
             </a>
             <a href="login.php" title="Login">

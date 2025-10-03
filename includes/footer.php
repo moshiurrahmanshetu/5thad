@@ -3,8 +3,8 @@
 ?>
 <footer class="footer">
     <div class="container">
-        <div class="footer-content">
-            <div class="footer-column">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3">
                 <h4>FreelanceHub</h4>
                 <p style="color: #bdc3c7; margin-bottom: 20px;">Connecting talented freelancers with businesses worldwide.</p>
                 <div class="social-icons">
@@ -16,7 +16,7 @@
                 </div>
             </div>
             
-            <div class="footer-column">
+            <div class="col-sm-12 col-md-4 col-lg-3">
                 <h4>For Advertisers</h4>
                 <ul>
                     <li><a href="how-it-works.php">How It Works</a></li>
@@ -27,7 +27,7 @@
                 </ul>
             </div>
             
-            <div class="footer-column">
+            <div class="col-sm-12 col-md-4 col-lg-3">
                 <h4>For Publishers</h4>
                 <ul>
                     <li><a href="get-started.php">Get Started</a></li>
@@ -38,7 +38,7 @@
                 </ul>
             </div>
             
-            <div class="footer-column">
+            <div class="col-sm-12 col-md-4 col-lg-3">
                 <h4>Company</h4>
                 <ul>
                     <li><a href="about.php">About Us</a></li>
@@ -55,3 +55,14 @@
         </div>
     </div>
 </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

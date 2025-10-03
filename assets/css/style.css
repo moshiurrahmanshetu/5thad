@@ -3,16 +3,16 @@
     --ad-pr-cl: #e0a800;
     --ad-pr-cl-deep: #fe7123;
     --ad-sec-cl: #2c3e50;
-    --ad-text-dark: #2c3e50;
     --ad-text-light: #7f8c8d;
     --ad-light: #e4e2e2;
     --ad-white: #ffffff;
+    --ad-black: #000000;
     --ad-light-dark: #000000f0;
     --ad-border-color: #e4e4e4;
     --ad-shadow-light: 0 2px 4px rgba(0,0,0,0.1);
     --ad-shadow-medium: 0 4px 8px rgba(0,0,0,0.15);
     --ad-shadow-heavy: 0 8px 16px rgba(0,0,0,0.2);
-    --ad-gradient-primary: linear-gradient(135deg, #e0a800, #f4d03f);
+    --ad-gradient-bg: linear-gradient(135deg, #2c3e50, #b74b11);
     --ad-gradient-secondary: linear-gradient(135deg, #2c3e50, #34495e);
 }
 
@@ -145,7 +145,7 @@ ul {
 .dropdown a {
     display: block;
     padding: 12px 20px;
-    color: var(--ad-text-dark);
+    color: var(--ad-sec-cl);
     transition: background-color 0.3s ease;
 }
 
@@ -178,7 +178,7 @@ ul {
     background: none;
     border: none;
     font-size: 24px;
-    color: var(--ad-text-dark);
+    color: var(--ad-sec-cl);
     cursor: pointer;
 }
 
@@ -279,11 +279,10 @@ ul {
 }
 
 .btn-primary {
-    background: var(--ad-gradient-primary);
-    color: var(--ad-white);
-    padding: 15px 30px;
+    background: var(--ad-pr-cl);
+    color: var(--ad-black);
+    padding: 10px 30px;
     border: none;
-    border-radius: 50px;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
@@ -294,7 +293,7 @@ ul {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: var(--ad-shadow-heavy);
+    background: var(--ad-pr-cl-deep);
     color: var(--ad-white);
     text-decoration: none;
 }
@@ -302,9 +301,8 @@ ul {
 .btn-secondary {
     background: transparent;
     color: var(--ad-white);
-    padding: 15px 30px;
+    padding: 10px 30px;
     border: 2px solid var(--ad-white);
-    border-radius: 50px;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
@@ -314,7 +312,7 @@ ul {
 
 .btn-secondary:hover {
     background: var(--ad-white);
-    color: var(--ad-text-dark);
+    color: var(--ad-black);
     text-decoration: none;
 }
 
@@ -331,7 +329,7 @@ ul {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: var(--ad-text-dark);
+    color: var(--ad-sec-cl);
 }
 
 .section p {
@@ -372,7 +370,7 @@ ul {
 .feature-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: var(--ad-text-dark);
+    color: var(--ad-sec-cl);
 }
 
 .feature-card p {
@@ -525,3 +523,195 @@ ul {
         font-size: 14px;
     }
 }
+
+
+/* log in and register page css start  */
+
+.login-section{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: var(--ad-gradient-bg);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.login-section .form-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.login-section .card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.6s ease;
+  opacity: 1
+}
+.login-section .card.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.login-section .card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.login-section .form-group {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.login-section .form-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+.login-section .form-group input::placeholder {
+  color: transparent;
+}
+.login-section .form-group label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #ddd;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+.login-section .form-group input:focus + label,
+.login-section .form-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.password-wrapper {
+  position: relative;
+}
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+}
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 20px;
+  font-size: 12px;
+}
+.login-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.login-options a {
+  color: var(--ad-white);
+  text-decoration: none;
+}
+.login-options a:hover{
+  color: var(--ad-sec-cl);
+  text-decoration: underline;
+}
+.login-btn, .google-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+.login-btn {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}
+.login-btn:hover {
+  background: #ddd;
+}
+.google-btn {
+  background: #124170;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.google-btn:hover {
+  background: #0d3053ff;
+}
+.facebook-btn {
+  color: var(--ad-black);
+  background: var(--ad-pr-cl);
+}
+.facebook-btn img{
+   height: 25px;
+   width: 25px;
+}
+.facebook-btn:hover {
+  background: #c09102;
+}
+.register-link {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.register-link a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+.register-link a:hover{
+  text-decoration: underline;
+  color: var(--ad-sec-cl);
+}
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  background: none;
+  border: none;
+}
+.register-link span{
+  color: #ffffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.register-link span:hover{
+  text-decoration: underline
+}
+  
+/* log in and register page css end  */

@@ -7,36 +7,43 @@
     
 <section class="login-section py-5">
   <div class="form-container">
-    <div class="card active" id="loginCard">
-      <h2>Login</h2>
+    <div class="card" id="registerCard">
+      <h2>Register</h2>
       <form>
         <button type="button" class="google-btn">
-          <img src="https://www.svgrepo.com/show/355037/google.svg" width="18"> Login with Google
+          <img src="https://www.svgrepo.com/show/355037/google.svg" width="18"> Register with Google
         </button>
         <button type="button" class="facebook-btn google-btn">
             <img src="assets/images/facebook-icon.png" width="18">Login with Facebook
         </button>
         <hr>
         <div class="form-group">
-          <input type="email" id="loginEmail" placeholder=" ">
-          <label for="loginEmail">Email</label>
+          <input type="text" id="name" placeholder=" ">
+          <label for="name">Full Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="regEmail" placeholder=" ">
+          <label for="regEmail">Email</label>
         </div>
         <div class="form-group password-wrapper">
-          <input type="password" id="loginPassword" placeholder=" ">
-          <label for="loginPassword">Password</label>
-          <button type="button" class="toggle-password" onclick="togglePassword('loginPassword', this)">
+          <input type="password" id="regPassword" placeholder=" ">
+          <label for="regPassword">Password</label>
+          <button type="button" class="toggle-password" onclick="togglePassword('regPassword', this)">
             <i class="fa-regular fa-eye"></i>
           </button>
         </div>
-        <div class="login-options">
-          <label><input type="checkbox"> Remember Me</label>
-          <a href="#">Forgot Password?</a>
+        <div class="form-group password-wrapper">
+          <input type="password" id="confirmPassword" placeholder=" ">
+          <label for="confirmPassword">Confirm Password</label>
+          <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword', this)">
+            <i class="fa-regular fa-eye"></i>
+          </button>
         </div>
-        <button type="submit" class="login-btn">Login</button>
+        <button type="submit" class="login-btn">Register</button>
         
       </form>
       <div class="register-link">
-        Don’t have an account? <a href="register.php">Register</a>
+        Already have an account? <a href="login.php">Login</a>
       </div>
     </div>
   </div>
