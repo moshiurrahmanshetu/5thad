@@ -1,23 +1,7 @@
 <?php
 // Publisher Dashboard Page
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publisher Dashboard - FreelanceHub</title>
-    <meta name="description" content="Manage your freelance projects and find new opportunities to grow your business.">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/dashboard.css">
+
 </head>
 <body>
     <!-- Header Top Bar -->
@@ -274,113 +258,88 @@
     <!-- Footer -->
     <?php include 'includes/footer.php'; ?>
     
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/dashboard.js"></script>
-</body>
-</html>
-
 <style>
 .jobs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
 }
-
 .job-card {
-    background: var(--background-white);
+    background: var(--ad-white);
     border-radius: 10px;
     padding: 25px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--ad-text-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .job-card:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--ad-text-light);
 }
-
 .job-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
-
 .job-header h4 {
     margin: 0;
-    color: var(--text-dark);
+    color: var(--ad-black);
     font-size: 1.1rem;
 }
-
 .job-budget {
-    background: var(--gradient-primary);
+    background: var(--ad-sec-cl);
     color: white;
     padding: 5px 12px;
     border-radius: 20px;
     font-weight: 600;
     font-size: 14px;
 }
-
 .job-card p {
-    color: var(--text-light);
+    color: var(--ad-sec-cl);
     margin-bottom: 15px;
     line-height: 1.5;
 }
-
 .job-meta {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
     font-size: 14px;
-    color: var(--text-light);
+    color: var(--ad-sec-cl);
     flex-wrap: wrap;
 }
-
 .job-meta span {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-
 .job-skills {
     display: flex;
     gap: 8px;
     margin-bottom: 15px;
     flex-wrap: wrap;
 }
-
 .skill-tag {
-    background: var(--background-light);
-    color: var(--text-dark);
+    background: var(--ad-light);
+    color: var(--ad-black);
     padding: 4px 10px;
     border-radius: 15px;
     font-size: 12px;
     font-weight: 500;
 }
-
 .job-card .btn {
     width: 100%;
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .jobs-grid {
         grid-template-columns: 1fr;
     }
-    
     .job-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-    
     .job-meta {
         flex-direction: column;
         gap: 8px;

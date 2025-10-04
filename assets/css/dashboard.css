@@ -2,14 +2,14 @@
 
 .dashboard-container {
     min-height: calc(100vh - 200px);
-    background-color: var(--background-light);
+    background-color: var(--ad-light);
     padding: 30px 0;
 }
 
 .dashboard-sidebar {
-    background: var(--background-white);
+    background: var(--ad-white);
     border-radius: 10px;
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--ad-border-color);
     padding: 30px 20px;
     margin-bottom: 30px;
     position: sticky;
@@ -32,16 +32,16 @@
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--ad-pr-cl);
 }
 
 .profile-info h4 {
     margin-bottom: 5px;
-    color: var(--text-dark);
+    color: var(--ad-black);
 }
 
 .profile-info p {
-    color: var(--text-light);
+    color: var(--ad-text-light);
     margin-bottom: 10px;
 }
 
@@ -54,12 +54,12 @@
 }
 
 .rating i {
-    color: var(--primary-color);
+    color: var(--ad-pr-cl);
     font-size: 14px;
 }
 
 .rating-text {
-    color: var(--text-light);
+    color: var(--ad-text-light);
     font-size: 12px;
     margin-left: 5px;
 }
@@ -78,7 +78,7 @@
     display: flex;
     align-items: center;
     padding: 12px 15px;
-    color: var(--text-dark);
+    color: var(--ad-black);
     text-decoration: none;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -86,12 +86,12 @@
 }
 
 .dashboard-nav a:hover {
-    background-color: var(--background-light);
-    color: var(--primary-color);
+    background-color: var(--ad-light);
+    color: var(--ad-pr-cl-deep);
 }
 
 .dashboard-nav li.active a {
-    background-color: var(--primary-color);
+    background-color: var(--ad-text-light);
     color: white;
 }
 
@@ -111,9 +111,9 @@
 }
 
 .dashboard-content {
-    background: var(--background-white);
+    background: var(--ad-white);
     border-radius: 10px;
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--ad-border-color);
     padding: 30px;
 }
 
@@ -128,7 +128,7 @@
 
 .dashboard-header h1 {
     margin: 0;
-    color: var(--text-dark);
+    color: var(--ad-black);
 }
 
 .dashboard-actions .btn {
@@ -138,25 +138,25 @@
 }
 
 .stat-card {
-    background: var(--background-white);
+    background: var(--ad-white);
     border-radius: 10px;
-    padding: 25px;
-    box-shadow: var(--shadow-light);
+    padding: 5px;
+    box-shadow: var(--ad-border-color);
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-card:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-medium);
+    box-shadow: var(--ad-text-light);
 }
 
 .stat-icon {
     width: 60px;
     height: 60px;
-    background: var(--gradient-primary);
+    background: var(--ad-grd-ico-bg);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -168,18 +168,18 @@
 .stat-content h3 {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--text-dark);
+    color: var(--ad-black);
     margin-bottom: 5px;
 }
 
 .stat-content p {
-    color: var(--text-light);
+    color: var(--ad-text-light);
     margin: 0;
     font-size: 14px;
 }
 
 .dashboard-section {
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .section-header {
@@ -191,7 +191,7 @@
 
 .section-header h2 {
     margin: 0;
-    color: var(--text-dark);
+    color: var(--ad-black);
 }
 
 .projects-grid {
@@ -201,7 +201,7 @@
 }
 
 .project-card {
-    background: var(--background-light);
+    background: var(--ad-light);
     border-radius: 10px;
     padding: 25px;
     border: 1px solid var(--border-color);
@@ -210,7 +210,7 @@
 
 .project-card:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--ad-border-color);
 }
 
 .project-header {
@@ -222,7 +222,7 @@
 
 .project-header h4 {
     margin: 0;
-    color: var(--text-dark);
+    color: var(--ad-black);
 }
 
 .status {
@@ -249,7 +249,7 @@
 }
 
 .project-card p {
-    color: var(--text-light);
+    color: var(--ad-sec-cl);
     margin-bottom: 15px;
     line-height: 1.5;
 }
@@ -259,7 +259,7 @@
     gap: 20px;
     margin-bottom: 15px;
     font-size: 14px;
-    color: var(--text-light);
+    color: var(--ad-sec-cl);
 }
 
 .project-meta span {
@@ -277,7 +277,7 @@
 
 .progress-bar {
     height: 100%;
-    background: var(--gradient-primary);
+    background: var(--ad-grd-border);
     border-radius: 3px;
     transition: width 0.3s ease;
 }
@@ -293,7 +293,7 @@
     align-items: flex-start;
     gap: 15px;
     padding: 20px;
-    background: var(--background-light);
+    background: var(--ad-light);
     border-radius: 10px;
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease;
@@ -301,7 +301,7 @@
 
 .message-item:hover {
     transform: translateY(-1px);
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--ad-border-color);
 }
 
 .message-avatar {
@@ -321,19 +321,19 @@
 
 .message-content h5 {
     margin: 0 0 8px 0;
-    color: var(--text-dark);
+    color: var(--ad-black);
     font-size: 16px;
 }
 
 .message-content p {
     margin: 0 0 8px 0;
-    color: var(--text-light);
+    color: var(--ad-text-light);
     line-height: 1.4;
 }
 
 .message-time {
     font-size: 12px;
-    color: var(--text-light);
+    color: var(--ad-text-light);
 }
 
 /* Mobile Responsive */
