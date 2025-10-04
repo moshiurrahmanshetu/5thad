@@ -7,6 +7,7 @@
 
 <!-- Header Menu -->
 <?php include 'includes/header-menu.php'; ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 
 <!-- Hero Section -->
 <section class="hero-section">
@@ -82,7 +83,7 @@
     <div class="container">
         <div class="choose-section-top text-center">
             <h2>Why Choose <span>5ThAD?</span></h2>
-        <p>We provide the tools and platform you need to succeed in the freelance economy.</p>
+            <p>We provide the tools and platform you need to succeed in the freelance economy.</p>
         </div>
         <div class="features-grid">
             <div class="feature-card">
@@ -124,34 +125,52 @@
     </div>
 </section>
 
-<!-- How It Works Section -->
-<section class="section section-light">
+<!-- Grow Network Section -->
+<section class="grow-nt-section py-5">
     <div class="container">
-        <h2>How It Works</h2>
-        <p>Getting started is simple. Follow these easy steps to begin your freelance journey.</p>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="feature-card">
-                    <i class="fas fa-user-plus"></i>
-                    <h3>1. Create Profile</h3>
-                    <p>Sign up and create your professional profile. Showcase your skills, experience, and portfolio.</p>
-                </div>
+        <div class="grow-nt-top text-center">
+            <h2>Grow Your Network</h2>
+            <p>Expand your freelance connections and grow your talent pool of accessible freelancers. Discover and interact with a community of high-quality, recommended talent.</p>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div id="net-lottie" class="lottie-box mb-2"></div>
             </div>
-
-            <div class="col-md-4">
-                <div class="feature-card">
-                    <i class="fas fa-search"></i>
-                    <h3>2. Find Projects</h3>
-                    <p>Browse thousands of available projects or post your own. Use our smart filters to find the perfect match.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="feature-card">
-                    <i class="fas fa-handshake"></i>
-                    <h3>3. Start Working</h3>
-                    <p>Connect with clients, discuss project details, and start working. Get paid securely through our platform.</p>
+            <div class="col-md-6">
+                <div class="grow-nt-list p-4">
+                    <h3>Expand Your Opportunities</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="badge rounded-circle me-3" style="background:#f7c948; width:32px; height:32px; display:flex; align-items:center; justify-content:center;">
+                                <i class="fas fa-users" style="color:#fff; font-size:1.2rem;"></i>
+                            </span>
+                            Quickly and easily connect with like-minded freelancers.
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="badge rounded-circle me-3" style="background:#a259ff; width:32px; height:32px; display:flex; align-items:center; justify-content:center;">
+                                <i class="fas fa-thumbs-up" style="color:#fff; font-size:1.2rem;"></i>
+                            </span>
+                            Get recommended for work by your network.
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="badge rounded-circle me-3" style="background:#2b2d42; width:32px; height:32px; display:flex; align-items:center; justify-content:center;">
+                                <i class="fas fa-building" style="color:#fff; font-size:1.2rem;"></i>
+                            </span>
+                            Grow your base of companies looking to employ freelancers.
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="badge rounded-circle me-3" style="background:#f7c948; width:32px; height:32px; display:flex; align-items:center; justify-content:center;">
+                                <i class="fas fa-network-wired" style="color:#fff; font-size:1.2rem;"></i>
+                            </span>
+                            Build lasting professional relationships and collaborations.
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <span class="badge rounded-circle me-3" style="background:#a259ff; width:32px; height:32px; display:flex; align-items:center; justify-content:center;">
+                                <i class="fas fa-rocket" style="color:#fff; font-size:1.2rem;"></i>
+                            </span>
+                            Unlock new projects and career growth opportunities.
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -260,7 +279,6 @@
     </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 
 <script>
     const animations = [{
@@ -270,6 +288,10 @@
         {
             id: 'pay-lottie',
             file: 'assets/images/payment.json'
+        },
+        {
+            id: 'net-lottie',
+            file: 'assets/images/growNet.json'
         }
     ];
 
@@ -305,7 +327,7 @@
             new IntersectionObserver(animateOnScroll, observerOptions).observe(el);
         });
     });
- 
+
 
     document.addEventListener("DOMContentLoaded", function() {
         const counters = document.querySelectorAll(".count");
@@ -361,11 +383,7 @@
     //         document.getElementById('copy-msg').style.display = 'none';
     //     }, 1500);
     // }
-
 </script>
-
-
-
 
 <!-- Footer -->
 <?php include 'includes/footer.php'; ?>

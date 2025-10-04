@@ -4,7 +4,7 @@
     --ad-pr-cl-deep: #fe7123;
     --ad-sec-cl: #2c3e50;
     --ad-text-light: #7f8c8d;
-    --ad-light: #ebebeb;
+    --ad-light: #eeeeee;
     --ad-white: #ffffff;
     --ad-black: #000000;
     --ad-light-dark: #000000f0;
@@ -421,28 +421,6 @@ text-align: center;
     border: 1px solid var(--ad-pr-cl-deep);
 }
 
-/* background: var(--ad-grd-border);
- padding: 13px;
- border-radius: 1rem;
- overflow: visible;
- position: relative;
-text-align: center;
- z-index: 1;
-}
-.feature-card::after {
- position: absolute;
- content: "";
- top: 1%;
- left: 1%;
- right: 1%;
- bottom: 1%;
- z-index: -1;
- height: 98%;
- width: 98%;
- background: #0a0a0a;
- border-radius: 1rem;
- transition: opacity .5s;
-} */
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--ad-shadow-medium);
@@ -488,6 +466,55 @@ text-align: center;
 }
 
 /* why choose Section end */
+
+/* grow network section start */
+@media screen and (min-width: 992px){
+.grow-nt-top{
+    width: 60%;
+    margin: 0 auto;
+}
+}
+.grow-nt-list{
+    box-shadow: 0 4px 15px rgb(14 14 14 / 21%);
+    background: #e6e2f5;
+}
+
+#net-lottie, #pay-lottie{
+    animation: ImgBounce 3s ease-in-out 0s infinite alternate;
+}
+@keyframes ImgBounce {
+    0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+}
+.grow-nt-list h3{
+    font-weight:700;
+    color:var(--ad-sec-cl);
+    margin-bottom:18px;
+}
+.grow-nt-list .list-unstyled{
+    font-size:1.15rem;
+    color: var(--ad-black);
+    line-height:1.7;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .grow-nt-list h3{
+        font-size: 20px;
+    }
+    .grow-nt-list .list-unstyled{
+        font-size:1rem;
+        color: var(--ad-black);
+        line-height:1.3;
+    }
+}
+
+/* grow network section end */
+
 
 /* Referral Section Start */
     .referral-section {
@@ -545,7 +572,7 @@ text-align: center;
         width: 100%;
         height: 100%;
         border-radius: 10px;
-        background: linear-gradient(120deg, rgba(255, 255, 255, 0.02) 30%, rgba(255, 255, 255, 0.25) 40%, rgba(255, 255, 255, 0.08) 40%), linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+        background: linear-gradient(120deg, rgba(255, 255, 255, 0.02) 30%, rgba(255, 255, 255, 0.322) 40%, rgba(255, 255, 255, 0.08) 40%), linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
         background-size: 150% 150%;
         animation: cardGradient 10s ease-in-out infinite;
         position: absolute;
