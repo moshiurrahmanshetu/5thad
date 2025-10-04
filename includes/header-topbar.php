@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreelanceHub - Connect Talent with Opportunity</title>
+    <title>5ThAD - Connect Talent with Opportunity</title>
     <meta name="description" content="Find the best freelancers and freelance jobs. Connect talented professionals with businesses worldwide.">
     
     <!-- Bootstrap CSS -->
