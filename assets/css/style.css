@@ -15,8 +15,14 @@
     --ad-gradient-bg: linear-gradient(135deg, #2c3e50, #b74b11);
     --ad-ref-grd-bg: linear-gradient(135deg, #2c3e50 0%, #584b0b 100%);
     --ad-grd-border: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    --ad-gg-bg: linear-gradient(to left, #4285F4, #34A853, #EA4335,#FBBC05 );
     --ad-grd-ico-bg: radial-gradient( #f7ba2b 0%, #ea5358 100%);
 }
+
+/* Blue: #4285F4
+Red: #EA4335
+Yellow: #FBBC05
+Green: #34A853 */
 
 /* Reset and Base Styles */
 * {
@@ -970,17 +976,81 @@ text-align: center;
 .login-btn:hover {
   background: #ddd;
 }
-.google-btn {
-  background: #124170;
+/* .google-btn {
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: var(--ad-gg-bg) 1;
+  border-radius: 10px;
+} */
+
+.google-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  padding: 12px 28px;
+  background: #111;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
 }
-.google-btn:hover {
-  background: #0d3053ff;
+
+/* Linear animated gradient border */
+.google-btn::before {
+  content: "";
+  position: absolute;
+  inset: -3px; /* border thickness */
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    #ff0055,
+    #ffcc00,
+    #00ff99,
+    #0066ff,
+    #ff00ff,
+    #ff0055
+  );
+  background-size: 400% 400%;
+  animation: moveGradient 10s linear infinite;
+  z-index: -1;
 }
+
+/* Mask inner area so only border shows */
+.google-btn::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #1b1b1b;
+  border-radius: 17px;
+  z-index: -1;
+}
+
+/* Animation: move gradient horizontally */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
+}
+
+
+.google-btn:hover::after {
+  background: #0c0c0c;
+}
+
+
 .facebook-btn {
   color: var(--ad-black);
   background: var(--ad-pr-cl);
@@ -1004,7 +1074,7 @@ text-align: center;
 }
 .register-link a:hover{
   text-decoration: underline;
-  color: var(--ad-sec-cl);
+  color: var(--ad-pr-cl);
 }
 .toggle-password {
   position: absolute;

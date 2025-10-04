@@ -155,6 +155,7 @@
                                 <div class="project-header">
                                     <h4>Website Development</h4>
                                     <span class="status status-active">Active</span>
+                                    <button style="border: none;" class="status bg-white"><i class="fa-regular fa-pen-to-square"></i> Edit</button>
                                 </div>
                                 <p>Looking for a skilled web developer to build an e-commerce website</p>
                                 <div class="project-meta">
@@ -284,61 +285,3 @@
 
 <!-- Footer -->
 <?php include 'includes/footer.php'; ?>
-
-<style>
-    .freelancer-card {
-        background: var(--ad-light);
-        border-radius: 10px;
-        padding: 20px;
-        border: 1px solid var(--border-color);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        text-align: center;
-    }
-
-    .freelancer-card:hover {
-        transform: translateY(-2px);
-        box-shadow: var(--ad-shadow-medium);
-    }
-
-    .freelancer-avatar {
-        margin-bottom: 15px;
-    }
-
-    .freelancer-avatar img {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid var(--ad-pr-cl-deep);
-    }
-
-    .freelancer-info h5 {
-        margin-bottom: 5px;
-        color: var(--ad-black);
-    }
-
-    .freelancer-info p {
-        color: var(--ad-text-light);
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-
-    .freelancer-info .rating {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2px;
-        margin-bottom: 10px;
-        font-size: 12px;
-    }
-
-    .freelancer-info .rating i {
-        color: var(--ad-pr-cl-deep);
-        font-size: 12px;
-    }
-
-    .freelancer-rate {
-        color: var(--ad-pr-cl-deep);
-        font-weight: 600;
-    }
-</style>

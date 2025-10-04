@@ -11,10 +11,7 @@
       <h2>Register</h2>
       <form>
         <button type="button" class="google-btn">
-          <img src="https://www.svgrepo.com/show/355037/google.svg" width="18"> Register with Google
-        </button>
-        <button type="button" class="facebook-btn google-btn">
-            <img src="assets/images/facebook-icon.png" width="18">Login with Facebook
+          <img src="https://www.svgrepo.com/show/355037/google.svg" width="18"> Continue With Google
         </button>
         <hr>
         <div class="form-group">

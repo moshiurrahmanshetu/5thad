@@ -1,11 +1,8 @@
-/* Dashboard Specific Styles */
-
 .dashboard-container {
     min-height: calc(100vh - 200px);
     background-color: var(--ad-light);
     padding: 30px 0;
 }
-
 .dashboard-sidebar {
     background: var(--ad-white);
     border-radius: 10px;
@@ -15,18 +12,15 @@
     position: sticky;
     top: 20px;
 }
-
 .user-profile {
     text-align: center;
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--border-color);
 }
-
 .profile-avatar {
     margin-bottom: 15px;
 }
-
 .avatar-img {
     width: 80px;
     height: 80px;
@@ -34,17 +28,14 @@
     object-fit: cover;
     border: 3px solid var(--ad-pr-cl);
 }
-
 .profile-info h4 {
     margin-bottom: 5px;
     color: var(--ad-black);
 }
-
 .profile-info p {
     color: var(--ad-text-light);
     margin-bottom: 10px;
 }
-
 .rating {
     display: flex;
     align-items: center;
@@ -52,28 +43,23 @@
     gap: 5px;
     margin-bottom: 10px;
 }
-
 .rating i {
     color: var(--ad-pr-cl);
     font-size: 14px;
 }
-
 .rating-text {
     color: var(--ad-text-light);
     font-size: 12px;
     margin-left: 5px;
 }
-
 .dashboard-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .dashboard-nav li {
     margin-bottom: 5px;
 }
-
 .dashboard-nav a {
     display: flex;
     align-items: center;
@@ -84,23 +70,19 @@
     transition: all 0.3s ease;
     position: relative;
 }
-
 .dashboard-nav a:hover {
     background-color: var(--ad-light);
     color: var(--ad-pr-cl-deep);
 }
-
 .dashboard-nav li.active a {
     background-color: var(--ad-text-light);
     color: white;
 }
-
 .dashboard-nav a i {
     width: 20px;
     margin-right: 10px;
     text-align: center;
 }
-
 .dashboard-nav .badge {
     background-color: #e74c3c;
     color: white;
@@ -109,14 +91,12 @@
     border-radius: 10px;
     margin-left: auto;
 }
-
 .dashboard-content {
     background: var(--ad-white);
     border-radius: 10px;
     box-shadow: var(--ad-border-color);
     padding: 30px;
 }
-
 .dashboard-header {
     display: flex;
     justify-content: space-between;
@@ -125,18 +105,15 @@
     padding-bottom: 20px;
     border-bottom: 1px solid var(--border-color);
 }
-
 .dashboard-header h1 {
     margin: 0;
     color: var(--ad-black);
 }
-
 .dashboard-actions .btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
 }
-
 .stat-card {
     background: var(--ad-white);
     border-radius: 10px;
@@ -147,12 +124,10 @@
     gap: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .stat-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--ad-text-light);
 }
-
 .stat-icon {
     width: 60px;
     height: 60px;
@@ -164,42 +139,35 @@
     color: white;
     font-size: 24px;
 }
-
 .stat-content h3 {
     font-size: 2rem;
     font-weight: 700;
     color: var(--ad-black);
     margin-bottom: 5px;
 }
-
 .stat-content p {
     color: var(--ad-text-light);
     margin: 0;
     font-size: 14px;
 }
-
 .dashboard-section {
     margin: 40px 0;
 }
-
 .section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
 }
-
 .section-header h2 {
     margin: 0;
     color: var(--ad-black);
 }
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
-
 .project-card {
     background: var(--ad-light);
     border-radius: 10px;
@@ -207,24 +175,20 @@
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .project-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--ad-border-color);
 }
-
 .project-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
-
 .project-header h4 {
     margin: 0;
     color: var(--ad-black);
 }
-
 .status {
     padding: 4px 12px;
     border-radius: 20px;
@@ -232,28 +196,23 @@
     font-weight: 600;
     text-transform: uppercase;
 }
-
 .status-active {
     background-color: #d4edda;
     color: #155724;
 }
-
 .status-completed {
     background-color: #cce5ff;
     color: #004085;
 }
-
 .status-pending {
     background-color: #fff3cd;
     color: #856404;
 }
-
 .project-card p {
     color: var(--ad-sec-cl);
     margin-bottom: 15px;
     line-height: 1.5;
 }
-
 .project-meta {
     display: flex;
     gap: 20px;
@@ -261,33 +220,28 @@
     font-size: 14px;
     color: var(--ad-sec-cl);
 }
-
 .project-meta span {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-
 .progress {
     height: 6px;
     background-color: #e9ecef;
     border-radius: 3px;
     overflow: hidden;
 }
-
 .progress-bar {
     height: 100%;
     background: var(--ad-grd-border);
     border-radius: 3px;
     transition: width 0.3s ease;
 }
-
 .messages-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 .message-item {
     display: flex;
     align-items: flex-start;
@@ -298,39 +252,32 @@
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease;
 }
-
 .message-item:hover {
     transform: translateY(-1px);
     box-shadow: var(--ad-border-color);
 }
-
 .message-avatar {
     flex-shrink: 0;
 }
-
 .message-avatar img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     object-fit: cover;
 }
-
 .message-content {
     flex: 1;
 }
-
 .message-content h5 {
     margin: 0 0 8px 0;
     color: var(--ad-black);
     font-size: 16px;
 }
-
 .message-content p {
     margin: 0 0 8px 0;
     color: var(--ad-text-light);
     line-height: 1.4;
 }
-
 .message-time {
     font-size: 12px;
     color: var(--ad-text-light);
@@ -341,61 +288,49 @@
     .dashboard-container {
         padding: 15px 0;
     }
-    
     .dashboard-sidebar {
         position: static;
         margin-bottom: 20px;
     }
-    
     .dashboard-content {
         padding: 20px;
     }
-    
     .dashboard-header {
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
     }
-    
     .stat-card {
         flex-direction: column;
         text-align: center;
         gap: 15px;
     }
-    
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
     .section-header {
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
     }
-    
     .message-item {
         flex-direction: column;
         text-align: center;
     }
-    
     .message-avatar {
         align-self: center;
     }
 }
-
 @media (max-width: 480px) {
     .dashboard-content {
         padding: 15px;
     }
-    
     .stat-card {
         padding: 20px;
     }
-    
     .project-card {
         padding: 20px;
     }
-    
     .message-item {
         padding: 15px;
     }
@@ -406,3 +341,141 @@
         width: 50%;
     }
 }
+
+/* publisher specific css start */
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+.job-card {
+    background: var(--ad-white);
+    border-radius: 10px;
+    padding: 25px;
+    border: 1px solid var(--ad-text-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.job-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--ad-text-light);
+}
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.job-header h4 {
+    margin: 0;
+    color: var(--ad-black);
+    font-size: 1.1rem;
+}
+.job-budget {
+    background: var(--ad-sec-cl);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.job-card p {
+    color: var(--ad-sec-cl);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.job-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: var(--ad-sec-cl);
+    flex-wrap: wrap;
+}
+.job-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.job-skills {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.skill-tag {
+    background: var(--ad-light);
+    color: var(--ad-black);
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.job-card .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+    .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .job-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+/* publisher specific css end */
+
+ /* advertiser specific css start */
+ .freelancer-card {
+    background: var(--ad-light);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+.freelancer-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--ad-shadow-medium);
+}
+.freelancer-avatar {
+    margin-bottom: 15px;
+}
+.freelancer-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--ad-pr-cl-deep);
+}
+.freelancer-info h5 {
+    margin-bottom: 5px;
+    color: var(--ad-black);
+}
+.freelancer-info p {
+    color: var(--ad-text-light);
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.freelancer-info .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.freelancer-info .rating i {
+    color: var(--ad-pr-cl-deep);
+    font-size: 12px;
+}
+.freelancer-rate {
+    color: var(--ad-pr-cl-deep);
+    font-weight: 600;
+}
+/* advertiser specific css end */
