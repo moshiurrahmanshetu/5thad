@@ -400,3 +400,9 @@
         padding: 15px;
     }
 }
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    .dash-info-sec .col-lg-3{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}

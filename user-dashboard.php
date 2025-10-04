@@ -3,29 +3,31 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - FreelanceHub</title>
     <meta name="description" content="Manage your freelance projects and earnings with our comprehensive dashboard.">
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
+
 <body>
     <!-- Header Top Bar -->
     <?php include 'includes/header-topbar.php'; ?>
-    
+
     <!-- Header Menu -->
     <?php include 'includes/header-menu.php'; ?>
-    
+
     <!-- Dashboard Content -->
     <div class="dashboard-container">
         <div class="container-fluid">
@@ -50,7 +52,7 @@
                                 </span>
                             </div>
                         </div>
-                        
+
                         <nav class="dashboard-nav">
                             <ul>
                                 <li class="active">
@@ -94,7 +96,7 @@
                         </nav>
                     </div>
                 </div>
-                
+
                 <!-- Main Content -->
                 <div class="col-lg-9 col-md-8">
                     <div class="dashboard-content">
@@ -107,65 +109,67 @@
                                 </button>
                             </div>
                         </div>
-                        
+
                         <!-- Stats Cards -->
-                        <div class="row mb-4">
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <h3>12</h3>
-                                        <p>Active Projects</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-dollar-sign"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <h3>$8,450</h3>
-                                        <p>Total Earnings</p>
+                        <div class="dash-info-sec">
+                            <div class="row mb-4">
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-briefcase"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <h3>12</h3>
+                                            <p>Active Projects</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <h3>4.9</h3>
-                                        <p>Average Rating</p>
+
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <h3>$8,450</h3>
+                                            <p>Total Earnings</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-clock"></i>
+
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <h3>4.9</h3>
+                                            <p>Average Rating</p>
+                                        </div>
                                     </div>
-                                    <div class="stat-content">
-                                        <h3>98%</h3>
-                                        <p>On-Time Delivery</p>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <h3>98%</h3>
+                                            <p>On-Time Delivery</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Recent Projects -->
                         <div class="dashboard-section">
                             <div class="section-header">
                                 <h2>Recent Projects</h2>
                                 <a href="#" class="btn btn-outline-primary">View All</a>
                             </div>
-                            
+
                             <div class="projects-grid">
                                 <div class="project-card">
                                     <div class="project-header">
@@ -181,7 +185,7 @@
                                         <div class="progress-bar" style="width: 75%"></div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="project-card">
                                     <div class="project-header">
                                         <h4>Mobile App Design</h4>
@@ -196,7 +200,7 @@
                                         <div class="progress-bar" style="width: 100%"></div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="project-card">
                                     <div class="project-header">
                                         <h4>Database Optimization</h4>
@@ -213,18 +217,18 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Recent Messages -->
                         <div class="dashboard-section">
                             <div class="section-header">
                                 <h2>Recent Messages</h2>
                                 <a href="#" class="btn btn-outline-primary">View All</a>
                             </div>
-                            
+
                             <div class="messages-list">
                                 <div class="message-item">
                                     <div class="message-avatar">
-                                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="User">
+                                        <img src="assets/images/img_avatar2.png" alt="User">
                                     </div>
                                     <div class="message-content">
                                         <h5>Sarah Johnson</h5>
@@ -232,7 +236,7 @@
                                         <span class="message-time">2 hours ago</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="message-item">
                                     <div class="message-avatar">
                                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="User">
@@ -243,7 +247,7 @@
                                         <span class="message-time">5 hours ago</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="message-item">
                                     <div class="message-avatar">
                                         <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="User">
@@ -261,18 +265,19 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Footer -->
     <?php include 'includes/footer.php'; ?>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
     <!-- Custom JavaScript -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/dashboard.js"></script>
 </body>
+
 </html>

@@ -3,13 +3,14 @@
 ?>
 
 </head>
+
 <body>
     <!-- Header Top Bar -->
     <?php include 'includes/header-topbar.php'; ?>
-    
+
     <!-- Header Menu -->
     <?php include 'includes/header-menu.php'; ?>
-    
+
     <!-- Publisher Dashboard Content -->
     <div class="dashboard-container">
         <div class="container-fluid">
@@ -34,7 +35,7 @@
                                 </span>
                             </div>
                         </div>
-                        
+
                         <nav class="dashboard-nav">
                             <ul>
                                 <li class="active">
@@ -78,7 +79,7 @@
                         </nav>
                     </div>
                 </div>
-                
+
                 <!-- Main Content -->
                 <div class="col-lg-9 col-md-8">
                     <div class="dashboard-content">
@@ -91,65 +92,67 @@
                                 </button>
                             </div>
                         </div>
-                        
+
                         <!-- Stats Cards -->
-                        <div class="row mb-4">
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <h3>12</h3>
-                                        <p>Active Projects</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-dollar-sign"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <h3>$8,450</h3>
-                                        <p>Total Earnings</p>
+                        <div class="dash-info-sec">
+                            <div class="row mb-4">
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-briefcase"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <h3>12</h3>
+                                            <p>Active Projects</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <h3>4.9</h3>
-                                        <p>Average Rating</p>
+
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <h3>$8,450</h3>
+                                            <p>Total Earnings</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-clock"></i>
+
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <h3>4.9</h3>
+                                            <p>Average Rating</p>
+                                        </div>
                                     </div>
-                                    <div class="stat-content">
-                                        <h3>98%</h3>
-                                        <p>On-Time Delivery</p>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="stat-content">
+                                            <h3>98%</h3>
+                                            <p>On-Time Delivery</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Available Jobs -->
                         <div class="dashboard-section">
                             <div class="section-header">
                                 <h2>Available Jobs</h2>
                                 <a href="#" class="btn btn-outline-primary">View All</a>
                             </div>
-                            
+
                             <div class="jobs-grid">
                                 <div class="job-card">
                                     <div class="job-header">
@@ -169,7 +172,7 @@
                                     </div>
                                     <button class="btn btn-primary btn-sm">Apply Now</button>
                                 </div>
-                                
+
                                 <div class="job-card">
                                     <div class="job-header">
                                         <h4>Mobile App UI/UX Design</h4>
@@ -188,7 +191,7 @@
                                     </div>
                                     <button class="btn btn-primary btn-sm">Apply Now</button>
                                 </div>
-                                
+
                                 <div class="job-card">
                                     <div class="job-header">
                                         <h4>Database Optimization</h4>
@@ -209,14 +212,14 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- My Projects -->
                         <div class="dashboard-section">
                             <div class="section-header">
                                 <h2>My Active Projects</h2>
                                 <a href="#" class="btn btn-outline-primary">View All</a>
                             </div>
-                            
+
                             <div class="projects-grid">
                                 <div class="project-card">
                                     <div class="project-header">
@@ -232,7 +235,7 @@
                                         <div class="progress-bar" style="width: 75%"></div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="project-card">
                                     <div class="project-header">
                                         <h4>Mobile App Design</h4>
@@ -254,95 +257,108 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Footer -->
     <?php include 'includes/footer.php'; ?>
-    
-<style>
-.jobs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-}
-.job-card {
-    background: var(--ad-white);
-    border-radius: 10px;
-    padding: 25px;
-    border: 1px solid var(--ad-text-light);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.job-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--ad-text-light);
-}
-.job-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-.job-header h4 {
-    margin: 0;
-    color: var(--ad-black);
-    font-size: 1.1rem;
-}
-.job-budget {
-    background: var(--ad-sec-cl);
-    color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 14px;
-}
-.job-card p {
-    color: var(--ad-sec-cl);
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-.job-meta {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
-    font-size: 14px;
-    color: var(--ad-sec-cl);
-    flex-wrap: wrap;
-}
-.job-meta span {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.job-skills {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
-}
-.skill-tag {
-    background: var(--ad-light);
-    color: var(--ad-black);
-    padding: 4px 10px;
-    border-radius: 15px;
-    font-size: 12px;
-    font-weight: 500;
-}
-.job-card .btn {
-    width: 100%;
-    margin-top: 10px;
-}
 
-@media screen and (max-width: 768px) {
-    .jobs-grid {
-        grid-template-columns: 1fr;
-    }
-    .job-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-    .job-meta {
-        flex-direction: column;
-        gap: 8px;
-    }
-}
-</style>
+    <style>
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .job-card {
+            background: var(--ad-white);
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid var(--ad-text-light);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--ad-text-light);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .job-header h4 {
+            margin: 0;
+            color: var(--ad-black);
+            font-size: 1.1rem;
+        }
+
+        .job-budget {
+            background: var(--ad-sec-cl);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .job-card p {
+            color: var(--ad-sec-cl);
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: var(--ad-sec-cl);
+            flex-wrap: wrap;
+        }
+
+        .job-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .job-skills {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background: var(--ad-light);
+            color: var(--ad-black);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .job-card .btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .job-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>

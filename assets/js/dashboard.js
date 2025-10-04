@@ -1,33 +1,33 @@
 // Dashboard specific JavaScript functionality
-$(document).ready(function() {
-    
+$(document).ready(function () {
+
     // Dashboard navigation
-    $('.dashboard-nav a').click(function(e) {
+    $('.dashboard-nav a').click(function (e) {
         e.preventDefault();
-        
+
         // Remove active class from all nav items
         $('.dashboard-nav li').removeClass('active');
-        
+
         // Add active class to clicked item
         $(this).parent().addClass('active');
-        
+
         // Get the target section
         var target = $(this).attr('href');
-        
+
         // Show loading state
         $('.dashboard-content').html('<div class="text-center p-5"><i class="fas fa-spinner fa-spin fa-2x"></i><p class="mt-3">Loading...</p></div>');
-        
+
         // Simulate loading delay
-        setTimeout(function() {
+        setTimeout(function () {
             loadDashboardSection(target);
         }, 500);
     });
-    
+
     // Load dashboard section content
     function loadDashboardSection(section) {
         var content = '';
-        
-        switch(section) {
+
+        switch (section) {
             case '#overview':
                 content = getOverviewContent();
                 break;
@@ -49,10 +49,10 @@ $(document).ready(function() {
             default:
                 content = getOverviewContent();
         }
-        
+
         $('.dashboard-content').html(content);
     }
-    
+
     // Overview content
     function getOverviewContent() {
         return `
@@ -64,7 +64,7 @@ $(document).ready(function() {
                     </button>
                 </div>
             </div>
-            
+            <div class="dash-info-sec">
             <div class="row mb-4">
                 <div class="col-lg-3 col-md-6 mb-3">
                     <div class="stat-card">
@@ -114,6 +114,7 @@ $(document).ready(function() {
                     </div>
                 </div>
             </div>
+             </div>
             
             <div class="dashboard-section">
                 <div class="section-header">
@@ -155,7 +156,7 @@ $(document).ready(function() {
             </div>
         `;
     }
-    
+
     // Projects content
     function getProjectsContent() {
         return `
@@ -216,7 +217,7 @@ $(document).ready(function() {
             </div>
         `;
     }
-    
+
     // Messages content
     function getMessagesContent() {
         return `
@@ -232,7 +233,7 @@ $(document).ready(function() {
             <div class="messages-list">
                 <div class="message-item">
                     <div class="message-avatar">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="User">
+                        <img src="../assets/images/img_avatar2.png" alt="User">
                     </div>
                     <div class="message-content">
                         <h5>Sarah Johnson</h5>
@@ -265,7 +266,7 @@ $(document).ready(function() {
             </div>
         `;
     }
-    
+
     // Earnings content
     function getEarningsContent() {
         return `
@@ -353,7 +354,7 @@ $(document).ready(function() {
             </div>
         `;
     }
-    
+
     // Profile content
     function getProfileContent() {
         return `
@@ -410,7 +411,7 @@ $(document).ready(function() {
             </div>
         `;
     }
-    
+
     // Settings content
     function getSettingsContent() {
         return `
@@ -482,28 +483,28 @@ $(document).ready(function() {
             </div>
         `;
     }
-    
+
     // Animate stat cards on scroll
-    $(window).scroll(function() {
-        $('.stat-card').each(function() {
+    $(window).scroll(function () {
+        $('.stat-card').each(function () {
             var elementTop = $(this).offset().top;
             var elementBottom = elementTop + $(this).outerHeight();
             var viewportTop = $(window).scrollTop();
             var viewportBottom = viewportTop + $(window).height();
-            
+
             if (elementBottom > viewportTop && elementTop < viewportBottom) {
                 $(this).addClass('animate-in');
             }
         });
     });
-    
+
     // Project card interactions
-    $(document).on('click', '.project-card', function() {
+    $(document).on('click', '.project-card', function () {
         $(this).toggleClass('selected');
     });
-    
+
     // Message item interactions
-    $(document).on('click', '.message-item', function() {
+    $(document).on('click', '.message-item', function () {
         $('.message-item').removeClass('selected');
         $(this).addClass('selected');
     });
