@@ -7,7 +7,7 @@
         <nav class="nav-menu" id="navMenu">
             <ul class="nav-menu-list">
                 <li>
-                    <a href="#" class="dropdown-toggle">Advertiser</a>
+                    <a href="javascript:void(0)" class="dropdown-toggle">Advertiser</a>
                     <ul class="dropdown">
                         <li><a href="advertiser-dashboard.php">Dashboard</a></li>
                         <li><a href="create-campaign.php">Create Campaign</a></li>
@@ -17,7 +17,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="dropdown-toggle">Publisher</a>
+                    <a href="javascript:void(0)" class="dropdown-toggle">Publisher</a>
                     <ul class="dropdown">
                         <li><a href="publisher-dashboard.php">Dashboard</a></li>
                         <li><a href="available-jobs.php">Available Jobs</a></li>

@@ -1,6 +1,6 @@
 // Main JavaScript functionality
-$(document).ready(function() {
-    
+$(document).ready(function () {
+
     const heroImages = [
         'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
         'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
@@ -13,10 +13,10 @@ $(document).ready(function() {
     // Create multiple background layers for smooth transitions
     function createBackgroundLayers() {
         const heroSection = $('.hero-section');
-        
+
         // Remove existing background layers
         heroSection.find('.hero-background').remove();
-        
+
         // Create two background layers
         for (let i = 0; i < 2; i++) {
             const backgroundLayer = $('<div class="hero-background"></div>');
@@ -36,21 +36,21 @@ $(document).ready(function() {
     // Smooth fade transition function
     function transitionToNextImage() {
         if (isTransitioning) return;
-        
+
         isTransitioning = true;
         currentImageIndex = (currentImageIndex + 1) % heroImages.length;
         const nextImage = heroImages[currentImageIndex];
-        
+
         const activeLayer = $('.hero-background.active');
         const inactiveLayer = $('.hero-background').not('.active');
-        
+
         // Set the new image to the inactive layer
         inactiveLayer.css('background-image', `url('${nextImage}')`);
-        
+
         // Fade out active layer and fade in inactive layer
         activeLayer.addClass('fade-out');
         inactiveLayer.addClass('fade-in');
-        
+
         // After transition completes, swap the layers
         setTimeout(() => {
             activeLayer.removeClass('active fade-out');
@@ -61,23 +61,23 @@ $(document).ready(function() {
 
     // Start the image rotation
     setInterval(transitionToNextImage, 4000); // Change every 4 seconds
-    
+
     // Mobile Menu Toggle
-    $('#mobileMenuToggle').click(function() {
+    $('#mobileMenuToggle').click(function () {
         $('#navMenu').toggleClass('active');
         $(this).find('i').toggleClass('fa-bars fa-times');
     });
-    
+
     // Close mobile menu when clicking outside
-    $(document).click(function(e) {
+    $(document).click(function (e) {
         if (!$(e.target).closest('.header-menu').length) {
             $('#navMenu').removeClass('active');
             $('#mobileMenuToggle i').removeClass('fa-times').addClass('fa-bars');
         }
     });
-    
+
     // Smooth scrolling for anchor links
-    $('a[href^="#"]').on('click', function(event) {
+    $('a[href^="#"]').on('click', function (event) {
         var target = $(this.getAttribute('href'));
         if (target.length) {
             event.preventDefault();
@@ -86,56 +86,103 @@ $(document).ready(function() {
             }, 1000);
         }
     });
-    
+
     // Add animation to feature cards on scroll
-    $(window).scroll(function() {
-        $('.feature-card').each(function() {
+    $(window).scroll(function () {
+        $('.feature-card').each(function () {
             var elementTop = $(this).offset().top;
             var elementBottom = elementTop + $(this).outerHeight();
             var viewportTop = $(window).scrollTop();
             var viewportBottom = viewportTop + $(window).height();
-            
+
             if (elementBottom > viewportTop && elementTop < viewportBottom) {
                 $(this).addClass('animate-in');
             }
         });
     });
-    
+
     // Dropdown functionality for desktop
-    $('.nav-menu li').hover(
-        function() {
-            $(this).find('.dropdown').stop(true, true).fadeIn(200);
-        },
-        function() {
-            $(this).find('.dropdown').stop(true, true).fadeOut(100);
+    $(document).ready(function () {
+        function isMobile() {
+            return window.innerWidth <= 768;
         }
-    );
-    
-    // Add loading animation
-    $(window).on('load', function() {
-        $('body').addClass('loaded');
-    });
-    
-    // Form validation (if forms exist)
-    $('form').on('submit', function(e) {
-        var isValid = true;
-        $(this).find('input[required], textarea[required]').each(function() {
-            if ($(this).val().trim() === '') {
-                $(this).addClass('error');
-                isValid = false;
-            } else {
-                $(this).removeClass('error');
-            }
-        });
-        
-        if (!isValid) {
-            e.preventDefault();
-            alert('Please fill in all required fields.');
+        if (!isMobile()) {
+            $('.nav-menu li').hover(
+                function () {
+                    $(this).find('.dropdown').stop(true, true).fadeIn(200);
+                },
+                function () {
+                    $(this).find('.dropdown').stop(true, true).fadeOut(100);
+                }
+            );
         }
-    });
-    
-     
+
+        $(document).ready(function() {
+  function dropdownToggleHandler() {
+    if ($(window).width() <= 768) {
+
+      // Dropdown toggle click event
+      $('.dropdown-toggle').off('click').on('click', function(e) {
+        e.preventDefault();
+
+        // Close other dropdowns
+        $('.dropdown').not($(this).next('.dropdown')).slideUp(200);
+
+        // Toggle current one
+        $(this).next('.dropdown').slideToggle(200);
+      });
+
+      // Click outside to close
+      $(document).off('click.nav').on('click.nav', function(e) {
+        if (!$(e.target).closest('.nav-menu-list').length) {
+          $('.dropdown').slideUp(200);
+        }
+      });
+
+    } else {
+      // Remove click events when screen is larger than 768px
+      $('.dropdown-toggle').off('click');
+      $(document).off('click.nav');
+      $('.dropdown').removeAttr('style'); // reset display
+    }
+  }
+
+  // Run on load
+  dropdownToggleHandler();
+
+  // Also run on window resize
+  $(window).resize(function() {
+    dropdownToggleHandler();
+  });
 });
+
+    });
+});
+
+// Add loading animation
+$(window).on('load', function () {
+    $('body').addClass('loaded');
+});
+
+// Form validation (if forms exist)
+$('form').on('submit', function (e) {
+    var isValid = true;
+    $(this).find('input[required], textarea[required]').each(function () {
+        if ($(this).val().trim() === '') {
+            $(this).addClass('error');
+            isValid = false;
+        } else {
+            $(this).removeClass('error');
+        }
+    });
+
+    if (!isValid) {
+        e.preventDefault();
+        alert('Please fill in all required fields.');
+    }
+});
+
+
 
 // Additional CSS for animations
 const style = document.createElement('style');
