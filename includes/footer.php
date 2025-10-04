@@ -23,10 +23,10 @@
                     <h4>Explore Us</h4>
                     <ul>
                         <li><a href="about.php">About Us</a></li>
-                        <li><a href="careers.php">Careers</a></li>
+                        <li><a href="blog.php">Blogs</a></li>
                         <li><a href="privacy.php">Privacy Policy</a></li>
                         <li><a href="terms.php">Terms of Service</a></li>
-                        <li><a href="advertiser-faq.php">FAQ</a></li>
+                        <li><a href="faq.php">FAQ</a></li>
                         <li><a href="contact.php">Contact Support</a></li>
                     </ul>
                 </div>
