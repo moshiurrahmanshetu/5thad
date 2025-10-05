@@ -31,6 +31,10 @@ body {
     color: var(--text-dark);
     background-color: var(--ad-white);
 }
+.container-fluid{
+    max-width: 1600px;
+    padding: 0 15px;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -526,6 +530,19 @@ text-align: center;
             margin-top: 30px;
         }
     }
+    .refer-btn{
+        position: relative;
+        display: inline-block;
+        padding: 8px 18px;
+        margin-top: 15px;
+        background: var(--ad-pr-cl);
+        color: var(--ad-black);
+        transition: 0.1s all ease-in-out;
+        font-weight: 500;
+    }
+    .refer-btn:hover{
+        background: var(--ad-pr-cl-deep);
+    }
 /* referral section end  */
 /* payment section start  */
 .payment-section {
@@ -615,11 +632,6 @@ text-align: center;
 .card.digital {
     background-size: 420px 327px;
  }
-.dropdown {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-}
 .nav-menu-list > li:nth-child(2) > .dropdown {
     transform: translateX(-55px);
 }
@@ -647,7 +659,7 @@ text-align: center;
     font-size: 12px;
 }
 }
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
 .dropdown {
     position: static;
     opacity: 1;
@@ -658,6 +670,14 @@ text-align: center;
     margin-top: 10px;
 }
 }
+@media screen and (min-width: 320px) and (max-width: 599px) {
+.dropdown {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+}
+
 @media screen and (min-width: 550px) and (max-width: 768px) {
     .dropdown {
         max-width: 252px;
@@ -867,6 +887,14 @@ text-align: center;
   max-width: 600px;
   margin: 0 auto;
 }
+@media screen and (min-width:320px) and (max-width:625px) {
+.login-section .form-container {
+  margin: 0 10px;
+}
+.login-section .card {
+    padding: 28px 16px !important;
+}
+}
 .login-section .card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
@@ -1049,7 +1077,7 @@ text-align: center;
 .register-link span:hover{
   text-decoration: underline
 }
-  
+
 /* log in and register page css end  */
 
 /* contact page css start */
@@ -1125,7 +1153,7 @@ text-align: center;
 }
 /* contact page css end */
 
-
+/* 
 
 .nav-menu-list .dropdown {
   display: none;
@@ -1152,4 +1180,4 @@ text-align: center;
     position: static;
     box-shadow: none;
   }
-}
+} */

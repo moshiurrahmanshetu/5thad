@@ -186,6 +186,7 @@
                     <div class="referral-text mb-4">
                         <h2 class="text-white" style="font-weight: 700; font-size: 2.2rem; margin-bottom: 10px; letter-spacing: 1px;">Refer &amp; Earn <span style="color: #ebbd05ff;">10% Commission</span></h2>
                         <p class="text-white" style="font-size: 1.1rem; margin-bottom: 20px;">Invite your friends to 5ThAD and earn 10% commission on their earnings. Share your unique referral link and start earning today!</p>
+                        <a class="refer-btn pill rounded" href="#">Refer Now <i class="fa-solid fa-share"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">

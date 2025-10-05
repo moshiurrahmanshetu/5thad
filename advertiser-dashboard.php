@@ -155,7 +155,7 @@
                                 <div class="project-header">
                                     <h4>Website Development</h4>
                                     <span class="status status-active">Active</span>
-                                    <button style="border: none;" class="status bg-white"><i class="fa-regular fa-pen-to-square"></i> Edit</button>
+                                    <button style="border: none;" class="status edit-btn"><i class="fa-regular fa-pen-to-square"></i> Edit</button>
                                 </div>
                                 <p>Looking for a skilled web developer to build an e-commerce website</p>
                                 <div class="project-meta">

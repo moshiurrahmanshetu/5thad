@@ -117,44 +117,6 @@ $(document).ready(function () {
             );
         }
 
-        $(document).ready(function() {
-  function dropdownToggleHandler() {
-    if ($(window).width() <= 768) {
-
-      // Dropdown toggle click event
-      $('.dropdown-toggle').off('click').on('click', function(e) {
-        e.preventDefault();
-
-        // Close other dropdowns
-        $('.dropdown').not($(this).next('.dropdown')).slideUp(200);
-
-        // Toggle current one
-        $(this).next('.dropdown').slideToggle(200);
-      });
-
-      // Click outside to close
-      $(document).off('click.nav').on('click.nav', function(e) {
-        if (!$(e.target).closest('.nav-menu-list').length) {
-          $('.dropdown').slideUp(200);
-        }
-      });
-
-    } else {
-      // Remove click events when screen is larger than 768px
-      $('.dropdown-toggle').off('click');
-      $(document).off('click.nav');
-      $('.dropdown').removeAttr('style'); // reset display
-    }
-  }
-
-  // Run on load
-  dropdownToggleHandler();
-
-  // Also run on window resize
-  $(window).resize(function() {
-    dropdownToggleHandler();
-  });
-});
 
     });
 });
