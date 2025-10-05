@@ -1168,15 +1168,12 @@ text-align: center;
   margin-bottom: 8px;
 }
 .blog-feature-card button{
-  background-color: var(--cm_sea_green);
-  color: var(--cm_white);
-  border: 1px solid;
+  background-color: var(--ad-pr-cl);
+  color: var(--ad-black);
 }
 .blog-feature-card button:hover{
-  background-color: var(--cm_l_mint);
-  border: 1px solid;
-  border-color: var(--cm_sea_green);
-  
+  background-color: var(--ad-pr-cl-deep);
+  color: var(--ad-white);
 }
 .blog-section{
   background: linear-gradient(180deg, #DDF4E7, transparent);
