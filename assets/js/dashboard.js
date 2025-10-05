@@ -175,7 +175,7 @@ $(document).ready(function () {
                     <div class="project-header">
                         <h4>E-commerce Website</h4>
                         <span class="status status-active">Active</span>
-                        <button class="status bg-light">Edit</button>
+                        <button class="status edit-btn"><i class="fa-regular fa-pen-to-square"></i> Edit</button>
                     </div>
                     <p>Building a complete e-commerce solution with React and Node.js</p>
                     <div class="project-meta">

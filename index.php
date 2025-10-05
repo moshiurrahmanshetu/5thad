@@ -29,8 +29,8 @@
             <div class="col-md-3 col-sm-6 mb-4">
                 <div class="infograph-card">
                     <div class="dot"></div>
-                    <i class="fas fa-users" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    <h3 class="count" data-target="2000000" style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">2M+</h3>
+                    <i class="fas fa-users"></i>
+                    <h3 class="count" data-target="2000000">2M+</h3>
                     <p>Active Users</p>
                     <div class="line topl"></div>
                     <div class="line leftl"></div>
@@ -41,8 +41,8 @@
             <div class="col-md-3 col-sm-6 mb-4">
                 <div class="infograph-card">
                     <div class="dot"></div>
-                    <i class="fas fa-briefcase" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    <h3 class="count" data-target="500000" style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">500K+</h3>
+                    <i class="fas fa-briefcase"></i>
+                    <h3 class="count" data-target="500000">500K+</h3>
                     <p>Projects Completed</p>
                     <div class="line topl"></div>
                     <div class="line leftl"></div>
@@ -53,8 +53,8 @@
             <div class="col-md-3 col-sm-6 mb-4">
                 <div class="infograph-card">
                     <div class="dot"></div>
-                    <i class="fas fa-dollar-sign" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    <h3 class="count" data-target="50000000" style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">$50M+</h3>
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3 class="count" data-target="50000000">$50M+</h3>
                     <p>Earned by Freelancers</p>
                     <div class="line topl"></div>
                     <div class="line leftl"></div>
@@ -65,8 +65,8 @@
             <div class="col-md-3 col-sm-6 mb-4">
                 <div class="infograph-card">
                     <div class="dot"></div>
-                    <i class="fas fa-star" style="font-size: 3rem; color: var(--primary-color);"></i>
-                    <h3 class="count" data-target="4.9" style="font-size: 2.5rem; color: var(--primary-color); margin: 15px 0;">4.9/5</h3>
+                    <i class="fas fa-star"></i>
+                    <h3 class="count" data-target="4.9">4.9/5</h3>
                     <p>Average Rating</p>
                     <div class="line topl"></div>
                     <div class="line leftl"></div>
@@ -186,7 +186,7 @@
                     <div class="referral-text mb-4">
                         <h2 class="text-white" style="font-weight: 700; font-size: 2.2rem; margin-bottom: 10px; letter-spacing: 1px;">Refer &amp; Earn <span style="color: #ebbd05ff;">10% Commission</span></h2>
                         <p class="text-white" style="font-size: 1.1rem; margin-bottom: 20px;">Invite your friends to 5ThAD and earn 10% commission on their earnings. Share your unique referral link and start earning today!</p>
-                        <a class="refer-btn pill rounded" href="#">Refer Now <i class="fa-solid fa-share"></i></a>
+                        <a class="refer-btn" href="#">Refer Now <i class="fa-solid fa-share"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">

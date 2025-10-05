@@ -8,7 +8,7 @@
   <!-- banner section start  -->
   <section class="all-banner">
     <div class="banner d-flex align-items-center justify-content-center"
-      style="background-image: url(assets/image/faq-banner.jpg);">
+      style="background-image: url(assets/images/faq.jpg);">
       <figcaption class="caption">
         <div class="caption-content" data-aos="fade-up">
           <h1>Frequently Asked Questions</h1>
@@ -20,7 +20,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <p class="text-center mb-5" style="font-size: 18px;">Find answers to common questions about <a href="index.html" ><b> Our Company</a></b>, our products, and services.</p>
+          <p class="text-center mb-5" style="font-size: 18px;">Find answers to common questions about <a style="color: var(--ad-pr-cl-deep);" href="/" ><b> 5ThAD</b></a>, our products, and services.</p>
           <div class="accordion" id="faqAccordion">
             <div class="accordion-item">
               <h3 class="accordion-header" id="faq1-heading">
