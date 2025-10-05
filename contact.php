@@ -7,7 +7,7 @@
 
 <!-- banner section start  -->
 <section class="all-banner">
-  <div class="banner d-flex align-items-center justify-content-center" style="background-image: url(assets/images/contact-bg-2.jpg);">
+  <div class="banner d-flex align-items-center justify-content-center" style="background-image: url(assets/contact-bg-2.jpg);">
     <figcaption class="caption">
       <div class="caption-content" data-aos="fade-up">
         <h1>Contact Us</h1>

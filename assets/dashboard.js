@@ -235,7 +235,7 @@ $(document).ready(function () {
             <div class="messages-list">
                 <div class="message-item">
                     <div class="message-avatar">
-                        <img src="../assets/images/img_avatar2.png" alt="User">
+                        <img src="../assets/img_avatar2.png" alt="User">
                     </div>
                     <div class="message-content">
                         <h5>Sarah Johnson</h5>

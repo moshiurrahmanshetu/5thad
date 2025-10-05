@@ -3,7 +3,7 @@
 ?>
 <div class="header-menu">
     <div class="container">
-        <a href="/" class="header-logo"><img src="assets/images/bg.png" alt="5ThAD"></a>
+        <a href="/" class="header-logo"><img src="assets/logo.png" alt="5ThAD"></a>
         <nav class="nav-menu" id="navMenu">
             <ul class="nav-menu-list">
                 <li>

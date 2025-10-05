@@ -630,7 +630,7 @@ text-align: center;
 }
 
 .payment-section .card.digital {
-    background-image: url('/assets/images/buttercup.jpg');
+    background-image: url('/assets/buttercup.jpg');
 }
 
 .payment-section .card.digital {
@@ -705,6 +705,57 @@ text-align: center;
 }
 
 /* payment section end  */
+
+/* transaction section start  */
+
+.table {
+    --bs-table-bg: #ffffff00 !important;
+}
+.transaction-table tbody tr:nth-child(odd) {
+  background-color: #e9f3ff;
+}
+.transaction-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.transaction-table tbody tr:hover {
+    position: relative;
+    transition:  0.25s all ease-in-out;
+    box-shadow: 5px 2px 17px -9px #000;
+}
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.transaction-table td, .transaction-table th {
+  white-space: nowrap;
+  border: 1px solid #dee2e6;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .txn-col, .user-col {
+    display: none;
+  }
+  .transaction-table td, .transaction-table th {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+  .latest-transactions h3 {
+    font-size: 1.2rem;
+  }
+  .btn.btn-sm {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+.table-responsive {
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+/* transaction section end */
+
 
 /* Footer */
 .footer {
@@ -837,7 +888,6 @@ text-align: center;
         font-size: 14px;
     }
 }
-
 /* faq page css start  */
 .faq-section{
   background: var(--cm_l_mint);

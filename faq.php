@@ -8,7 +8,7 @@
   <!-- banner section start  -->
   <section class="all-banner">
     <div class="banner d-flex align-items-center justify-content-center"
-      style="background-image: url(assets/images/faq.jpg);">
+      style="background-image: url(assets/faq.jpg);">
       <figcaption class="caption">
         <div class="caption-content" data-aos="fade-up">
           <h1>Frequently Asked Questions</h1>

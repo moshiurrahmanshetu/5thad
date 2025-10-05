@@ -233,7 +233,7 @@
                             <div class="col-md-4 mb-3">
                                 <div class="freelancer-card">
                                     <div class="freelancer-avatar">
-                                        <img src="assets/images/img_avatar2.png" alt="Freelancer">
+                                        <img src="assets/img_avatar2.png" alt="Freelancer">
                                     </div>
                                     <div class="freelancer-info">
                                         <h5>Sarah Johnson</h5>

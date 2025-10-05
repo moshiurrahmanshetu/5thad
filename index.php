@@ -79,7 +79,7 @@
 </section>
 
 <!-- Features Section -->
-<section class="why-choose-section py-5" style="background-image: url('assets/images/why-choose-bg.jpg');">
+<section class="why-choose-section py-5" style="background-image: url('assets/why-choose-bg.jpg');">
     <div class="container">
         <div class="choose-section-top text-center">
             <h2>Why Choose <span>5ThAD?</span></h2>
@@ -213,7 +213,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card digital text-center">
                             <div class="card-image">
-                                <img class="img-responsive" src="assets/images/pp.png">
+                                <img class="img-responsive" src="assets/pp.png">
                             </div>
                             <span style="font-weight:600; color:#0070ba;">PayPal</span>
                         </div>
@@ -221,7 +221,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card digital text-center">
                             <div class="card-image">
-                                <img class="img-responsive" src="assets/images/btc.png">
+                                <img class="img-responsive" src="assets/btc.png">
                             </div>
                             <span style="font-weight:600; color:#0070ba;">Bitcoin</span>
                         </div>
@@ -229,7 +229,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card digital text-center">
                             <div class="card-image">
-                                <img class="img-responsive" src="assets/images/wm.png">
+                                <img class="img-responsive" src="assets/wm.png">
                             </div>
                             <span style="font-weight:600; color:#0070ba;">WebMoney</span>
                         </div>
@@ -237,7 +237,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card digital text-center">
                             <div class="card-image">
-                                <img class="img-responsive" src="assets/images/pr.png">
+                                <img class="img-responsive" src="assets/pr.png">
                             </div>
                             <span style="font-weight:600; color:#0070ba;">Payeer</span>
                         </div>
@@ -245,7 +245,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card digital text-center">
                             <div class="card-image">
-                                <img class="img-responsive" src="assets/images/pm.png">
+                                <img class="img-responsive" src="assets/pm.png">
                             </div>
                             <span style="font-weight:600; color:#0070ba;">Perfect Money</span>
                         </div>
@@ -253,7 +253,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card digital text-center">
                             <div class="card-image">
-                                <img class="img-responsive" src="assets/images/adv.png">
+                                <img class="img-responsive" src="assets/adv.png">
                             </div>
                             <span style="font-weight:600; color:#0070ba;">AdvCash</span>
                         </div>
@@ -261,7 +261,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card digital text-center">
                             <div class="card-image">
-                                <img class="img-responsive" src="assets/images/g-pay.png">
+                                <img class="img-responsive" src="assets/g-pay.png">
                             </div>
                             <span style="font-weight:600; color:#0070ba;">Google Pay</span>
                         </div>
@@ -269,7 +269,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card digital text-center">
                             <div class="card-image">
-                                <img class="img-responsive" src="assets/images/mc-logo.png">
+                                <img class="img-responsive" src="assets/mc-logo.png">
                             </div>
                             <span style="font-weight:600; color:#0070ba;">Master Card</span>
                         </div>
@@ -280,19 +280,85 @@
     </div>
 </section>
 
+<section class="latest-transactions py-5 bg-light">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+      <h3 class="fw-bold mb-2 mb-md-0"><i class="fas fa-exchange-alt me-2 text-primary"></i>Latest Transactions</h3>
+      <a href="#" class="btn btn-sm btn-warning text-dark fw-semibold">View All</a>
+    </div>
+
+    <div class="table-responsive shadow-sm rounded">
+      <table class="table align-middle mb-0 transaction-table">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th class="txn-col">Transaction ID</th>
+            <th class="user-col">User</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          $transactions = [
+            ['id'=>1, 'txn_id'=>'TXN-2001', 'user'=>'John Doe', 'type'=>'Deposit', 'amount'=>120.50, 'status'=>'Completed', 'date'=>'2025-10-04'],
+            ['id'=>2, 'txn_id'=>'TXN-2002', 'user'=>'Sarah Lee', 'type'=>'Withdrawal', 'amount'=>75.00, 'status'=>'Pending', 'date'=>'2025-10-03'],
+            ['id'=>3, 'txn_id'=>'TXN-2003', 'user'=>'Michael Scott', 'type'=>'Deposit', 'amount'=>310.00, 'status'=>'Completed', 'date'=>'2025-10-03'],
+            ['id'=>4, 'txn_id'=>'TXN-2004', 'user'=>'Emily Davis', 'type'=>'Withdrawal', 'amount'=>95.00, 'status'=>'Cancelled', 'date'=>'2025-10-02'],
+            ['id'=>5, 'txn_id'=>'TXN-2005', 'user'=>'David Wilson', 'type'=>'Deposit', 'amount'=>450.00, 'status'=>'Completed', 'date'=>'2025-10-02'],
+            ['id'=>6, 'txn_id'=>'TXN-2006', 'user'=>'Olivia Brown', 'type'=>'Withdrawal', 'amount'=>150.25, 'status'=>'Completed', 'date'=>'2025-10-01'],
+            ['id'=>7, 'txn_id'=>'TXN-2007', 'user'=>'James Taylor', 'type'=>'Deposit', 'amount'=>220.10, 'status'=>'Pending', 'date'=>'2025-09-30'],
+            ['id'=>8, 'txn_id'=>'TXN-2008', 'user'=>'Sophia Miller', 'type'=>'Withdrawal', 'amount'=>90.00, 'status'=>'Completed', 'date'=>'2025-09-30'],
+            ['id'=>9, 'txn_id'=>'TXN-2009', 'user'=>'Liam Anderson', 'type'=>'Deposit', 'amount'=>380.00, 'status'=>'Completed', 'date'=>'2025-09-29'],
+            ['id'=>10, 'txn_id'=>'TXN-2010', 'user'=>'Isabella Thomas', 'type'=>'Withdrawal', 'amount'=>55.00, 'status'=>'Pending', 'date'=>'2025-09-28'],
+            ['id'=>11, 'txn_id'=>'TXN-2011', 'user'=>'Noah Jackson', 'type'=>'Deposit', 'amount'=>600.00, 'status'=>'Completed', 'date'=>'2025-09-27'],
+            ['id'=>12, 'txn_id'=>'TXN-2012', 'user'=>'Emma White', 'type'=>'Withdrawal', 'amount'=>80.00, 'status'=>'Cancelled', 'date'=>'2025-09-27'],
+            ['id'=>13, 'txn_id'=>'TXN-2013', 'user'=>'Lucas Harris', 'type'=>'Deposit', 'amount'=>340.00, 'status'=>'Completed', 'date'=>'2025-09-26'],
+            ['id'=>14, 'txn_id'=>'TXN-2014', 'user'=>'Mia Martin', 'type'=>'Withdrawal', 'amount'=>120.00, 'status'=>'Pending', 'date'=>'2025-09-26'],
+            ['id'=>15, 'txn_id'=>'TXN-2015', 'user'=>'Benjamin Moore', 'type'=>'Deposit', 'amount'=>500.00, 'status'=>'Completed', 'date'=>'2025-09-25'],
+          ];
+
+          foreach ($transactions as $txn) {
+            $badgeClass = match (strtolower($txn['status'])) {
+              'completed' => 'bg-success',
+              'pending' => 'bg-warning text-dark',
+              'cancelled' => 'bg-danger',
+              default => 'bg-secondary'
+            };
+
+            echo "
+              <tr>
+                <td>{$txn['id']}</td>
+                <td class='txn-col'>{$txn['txn_id']}</td>
+                <td class='user-col'><i class='fas fa-user me-1 text-info'></i>{$txn['user']}</td>
+                <td><span class='badge bg-primary'>{$txn['type']}</span></td>
+                <td><strong>\${$txn['amount']}</strong></td>
+                <td><span class='badge {$badgeClass}'>{$txn['status']}</span></td>
+                <td>{$txn['date']}</td>
+              </tr>
+            ";
+          }
+          ?>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
 <script>
     const animations = [{
             id: 'ref-lottie',
-            file: 'assets/images/referal.json'
+            file: 'assets/referal.json'
         },
         {
             id: 'pay-lottie',
-            file: 'assets/images/payment.json'
+            file: 'assets/payment.json'
         },
         {
             id: 'net-lottie',
-            file: 'assets/images/growNet.json'
+            file: 'assets/growNet.json'
         }
     ];
 

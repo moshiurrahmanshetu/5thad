@@ -6,7 +6,7 @@
         <div class="row pb-4">
             <div class="col-sm-12 col-md-4 col-lg-3">
                 <div class="footer-logo mb-4">
-                    <img src="assets/images/bg.png" alt="5ThAD" style="height: 50px;">
+                    <img src="assets/logo.png" alt="5ThAD" style="height: 50px;">
                 </div>
                 <p style="color: #bdc3c7; margin-bottom: 20px;">Connecting talented freelancers with businesses worldwide.</p>
                 <hr>
@@ -67,7 +67,7 @@
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Custom JavaScript -->
-<script src="assets/js/main.js"></script>
-<script src="assets/js/dashboard.js"></script>
+<script src="assets/main.js"></script>
+<script src="assets/dashboard.js"></script>
 </body>
 </html>
