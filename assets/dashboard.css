@@ -16,7 +16,7 @@
     text-align: center;
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--ad-border-color);
 }
 .profile-avatar {
     margin-bottom: 15px;
