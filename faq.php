@@ -204,3 +204,51 @@
   <?php include 'includes/footer.php'; ?>
 </body>
 </html>
+
+<style>
+.faq-section{
+  background: var(--cm_l_mint);
+}
+.all-banner .banner .caption {
+  transition: all 0.9s ease-in-out;
+  background: rgba(0, 0, 0, 0.486);
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  background-size: cover;
+  height: 300px;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  background-position: center;
+}
+.all-banner .banner .caption .caption-content {
+  color: var(--ad-white);
+}
+.accordion-item {
+  border: 1px solid;
+  border-color: var(--ad-pr-cl-deep);
+}
+.accordion-item {
+  position: relative;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1); 
+  margin-bottom: 20px;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-item:hover, .accordion-collapse.collapse.show {
+    box-shadow: 0px 8px 12px -7px #0000006e;
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--ad-pr-lt);
+}
+
+</style>

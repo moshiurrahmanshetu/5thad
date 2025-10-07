@@ -122,3 +122,50 @@
 <?php include 'includes/footer.php'; ?>
 </body>
 </html>
+
+<style>
+  
+.blog-feature-card {
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 7px 0px;
+}
+.blog-feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.171) 0px 8px 15px 2px;
+}
+.blog-feature-card .card-body p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin-bottom: 5px;
+}
+.blog-feature-card .card-body h5{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 8px;
+}
+.blog-feature-card button{
+  background-color: var(--ad-pr-cl);
+  color: var(--ad-black);
+}
+.blog-feature-card button:hover{
+  background-color: var(--ad-pr-cl-deep);
+  color: var(--ad-white);
+}
+.blog-section{
+  background: linear-gradient(180deg, #DDF4E7, transparent);
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .blog-section .col-12{
+  max-width: 330px;
+}
+}
+
+</style>

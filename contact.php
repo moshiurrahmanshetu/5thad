@@ -87,3 +87,78 @@
 <?php include 'includes/footer.php'; ?>
 </body>
 </html>
+ <style>
+  
+.all-banner .banner .caption {
+    transition: all 0.9s ease-in-out;
+    background: rgba(0, 0, 0, 0.486);
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -ms-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+}
+.all-banner .banner .caption .caption-content {
+    color: var(--ad-white);
+}
+.contact-section {
+  background: var(--ad-gradient-bg);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+.contact-form-inner{
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); border-radius: 12px; padding: 40px; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.3); color: #fff; border: 1px solid rgba(255,255,255,0.2);
+}
+.contact-section .msg-title{
+  color: var(--ad-white);
+  font-weight: 700;
+}
+.form-control{
+  border: 1px solid var(--ad-pr-cl);
+  box-shadow: none;
+}
+.form-control:focus{
+  box-shadow: 0px 2px 0px 2px rgb(58 58 58 / 25%);
+  border-color: var(--ad-pr-cl);
+}
+.floating-group { position: relative; }
+.floating-group .form-label {
+    position: absolute; top: 12px; left: 12px; color: var(--ad-white); font-size: 14px; pointer-events: none; transition: 0.3s ease;
+}
+.floating-group input, .floating-group textarea {
+    width: 100%; padding: 12px; border: none; border-radius: 6px; outline: none; font-size: 14px; background: rgba(255, 255, 255, 0.2); color: var(--ad-white);
+}
+.floating-group input:focus, .floating-group textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    color: var(--ad-white);
+}
+.floating-group .form-control::placeholder { opacity: 0; }
+
+.floating-group:focus-within .form-label {
+  top: -0.6rem; transform: none; font-size: 12px; color: var(--ad-white);
+}
+.floating-group:has(.form-control:not(:placeholder-shown)) .form-label {
+  top: -0.6rem; transform: none; font-size: 12px;
+}
+.contact-form-inner button{
+  text-align: center; border: 1px solid var(--ad-pr-cl); background: var(--ad-pr-cl); color: var(--ad-white); display: block; margin: 0 auto;
+}
+.contact-form-inner button:hover{
+  border: 1px solid var(--ad-pr-cl-deep);
+  background: var(--ad-pr-cl-deep);
+}
+
+ </style>

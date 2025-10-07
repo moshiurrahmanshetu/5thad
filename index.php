@@ -447,3 +447,571 @@
 
 </body>
 </html>
+
+<style>
+    /* Hero Section */
+.hero-section {
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in-out;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+/* Hero Background with Smooth Fade Transition */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    z-index: 1;
+}
+.hero-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+.hero-background.active {
+    opacity: 1;
+}
+
+.hero-background.fade-out {
+    opacity: 0;
+}
+.hero-background.fade-in {
+    opacity: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--ad-white);
+    max-width: 850px;
+    padding: 0 20px;
+}
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn-primary {
+    background: var(--ad-pr-cl);
+    color: var(--ad-black);
+    padding: 10px 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: var(--ad-shadow-medium);
+}
+.btn-primary:hover {
+    background: var(--ad-pr-cl-deep);
+    color: var(--ad-white);
+    text-decoration: none;
+}
+.btn-secondary {
+    background: transparent;
+    color: var(--ad-white);
+    padding: 10px 30px;
+    border: 2px solid var(--ad-white);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+    background: var(--ad-white);
+    color: var(--ad-black);
+    text-decoration: none;
+}
+/* Main Content Sections */
+
+.infograph-section, .why-choose-section {
+    padding: 50px 0;
+}
+.infograph-section{
+    background: var(--ad-light);
+}
+.infograph-section .infograph-card {
+ background: var(--ad-grd-border);
+ padding: 25px 13px;
+ border-radius: 1rem;
+ overflow: visible;
+ position: relative;
+text-align: center;
+ z-index: 1;
+}
+.infograph-card p{
+    font-weight: 500;
+}
+.infograph-card .dot {
+  width: 5px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 100px;
+  z-index: 2;
+  right: 10%;
+  top: 10%;
+  animation: moveDot 6s linear infinite;
+}
+
+@keyframes moveDot {
+  0%,
+  100% {
+    top: 7%;
+    right: 7%;
+  }
+  25% {
+    top: 7%;
+    right: calc(100% - 20px);
+  }
+  50% {
+    top: calc(100% - 15px);
+    right: calc(100% - 20px);
+  }
+  75% {
+    top: calc(100% - 25px);
+    right: 7%;
+  }
+}
+
+.infograph-card .line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #2c2c2c;
+}
+.infograph-card .topl {
+    left: 0;
+    top: 7%;
+    background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+}
+.infograph-card .bottoml {
+  bottom: 10%;
+  left: 0;
+}
+.infograph-card .leftl {
+    left: 7%;
+    top: 0%;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+.infograph-card .rightl {
+  right: 7%;
+  width: 1px;
+  top: 0;
+  height: 100%;
+}
+.infograph-card i{
+    font-size: 3rem;
+}
+
+.section-light {
+    background-color: var(--ad-light);
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+.feature-card {
+    background: #8d8d8d70;
+    color: var(--ad-white);
+    padding: 40px 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    text-align: center;
+    box-shadow: var(--ad-shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--ad-black);
+    cursor: pointer;
+}
+.feature-card:hover{
+    border: 1px solid var(--ad-pr-cl-deep);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--ad-shadow-medium);
+}
+.feature-card i {
+    font-size: 3rem;
+    color: var(--ad-pr-cl);
+    margin-bottom: 20px;
+}
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--ad-white);
+}
+.feature-card p {
+    color: var(--ad-white);
+    line-height: 1.6;
+}
+
+/* why choose Section start */
+.why-choose-section, .why-choose-section .container{
+        position: relative;
+        z-index: 2;
+        color: #ffffffff;
+    }
+    .why-choose-section{
+        background-size: cover;
+        background-position: top center;
+    }
+    .why-choose-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.247);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+}
+.choose-section-top span{
+    color: var(--ad-pr-cl);
+}
+
+/* why choose Section end */
+
+/* grow network section start */
+@media screen and (min-width: 992px){
+.grow-nt-top{
+    width: 60%;
+    margin: 0 auto;
+}
+}
+.grow-nt-list{
+    box-shadow: 0 4px 15px rgb(14 14 14 / 21%);
+    background: #e6e2f5;
+}
+
+#net-lottie, #pay-lottie{
+    animation: ImgBounce 3s ease-in-out 0s infinite alternate;
+}
+@keyframes ImgBounce {
+    0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+}
+.grow-nt-list h3{
+    font-weight:700;
+    color:var(--ad-sec-cl);
+    margin-bottom:18px;
+}
+.grow-nt-list .list-unstyled{
+    font-size:1.15rem;
+    color: var(--ad-black);
+    line-height:1.7;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .grow-nt-list h3{
+        font-size: 20px;
+    }
+    .grow-nt-list .list-unstyled{
+        font-size:1rem;
+        color: var(--ad-black);
+        line-height:1.3;
+    }
+    .infograph-card i{
+    font-size: 2rem;
+}
+.infograph-card h3{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.infograph-section .infograph-card {
+    min-height: 202px;
+}
+
+}
+
+/* grow network section end */
+
+/* Referral Section Start */
+    .referral-section {
+        padding: 60px 0 40px 0;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background: var(--ad-ref-grd-bg);
+    }
+
+    @media screen and (max-width: 900px) {
+        .referral-content {
+            flex-direction: column;
+            text-align: center;
+        }
+        .referral-graphic {
+            margin-top: 30px;
+        }
+    }
+    .refer-btn{
+        position: relative;
+        display: inline-block;
+        padding: 8px 18px;
+        margin-top: 15px;
+        background: var(--ad-pr-cl);
+        color: var(--ad-black);
+        transition: 0.1s all ease-in-out;
+        font-weight: 500;
+        border-radius: 30px;
+    }
+    .refer-btn:hover{
+        background: var(--ad-pr-cl-deep);
+    }
+/* referral section end  */
+/* payment section start  */
+.payment-section {
+    padding: 60px 0 40px 0;
+    background: var(--ad-light);
+}
+.payment-section .card {
+    color: white;
+    background-color: #2a292d;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 24px;
+    display: grid;
+    margin-bottom: 24px;
+    grid-template-rows: 1fr auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.12), 0 2px 16px rgba(0, 0, 0, 0.12), 0 4px 20px rgba(0, 0, 0, 0.12), 0 12px 28px rgba(0, 0, 0, 0.12);
+    color: white;
+    max-height: 130px !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card.digital:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.9), 0 1px 0 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+}
+.card.digital:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.02) 30%, rgba(255, 255, 255, 0.322) 40%, rgba(255, 255, 255, 0.08) 40%), linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background-size: 150% 150%;
+    animation: cardGradient 10s ease-in-out infinite;
+    position: absolute;
+}
+.card-image{
+    margin-bottom: 10px;
+}
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.2), 0 24px 48px rgba(0, 0, 0, 0.2);
+
+}
+.card:hover .digital:after {
+    border: 1px solid var(--ad-pr-cl);
+    animation: cardGradient 7s ease-in-out infinite;
+}
+
+@keyframes cardGradient {
+    0% {
+        background-position: 0% 10%;
+    }
+
+    50% {
+        background-position: 100% 91%;
+    }
+
+    100% {
+        background-position: 0% 10%;
+    }
+}
+
+.payment-section .card.digital {
+    background-image: url('/assets/buttercup.jpg');
+}
+
+.payment-section .card.digital {
+    animation-name: cardAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: black;
+    position: relative;
+    color: #1a1d21;
+}
+.card.digital .card-image img{
+    height: 40px;
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+.card.digital {
+    background-size: 420px 327px;
+ }
+.nav-menu-list > li:nth-child(2) > .dropdown {
+    transform: translateX(-55px);
+}
+}
+@media screen and (min-width: 426px) and (max-width: 575px) {
+    .card.digital {
+        background-size: 660px 277px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .card.digital {
+        background-size: 130% 250%;
+    }
+}
+@media screen and (min-width: 768px) {
+.order-sm-12 {
+    order: 12;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 575px) {
+.header-logo img {
+    height: 60px;
+}
+.header-topbar span{
+    font-size: 12px;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+.dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: var(--ad-light);
+    margin-top: 10px;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 599px) {
+.dropdown {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+}
+@media screen and (min-width: 550px) and (max-width: 768px) {
+    .dropdown {
+        max-width: 252px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 549px) {
+    .dropdown {
+        max-width: 200px;
+    }
+}
+
+/* payment section end  */
+
+/* transaction section start  */
+
+.table {
+    --bs-table-bg: #ffffff00 !important;
+}
+.transaction-table tbody tr:nth-child(odd) {
+  background-color: #e9f3ff;
+}
+.transaction-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.transaction-table tbody tr:hover {
+    position: relative;
+    transition:  0.25s all ease-in-out;
+    box-shadow: 5px 2px 17px -9px #000;
+}
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.transaction-table td, .transaction-table th {
+  white-space: nowrap;
+  border: 1px solid #c1d0dd;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .txn-col, .user-col {
+    display: none;
+  }
+  .transaction-table td, .transaction-table th {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+  .latest-transactions h3 {
+    font-size: 1.2rem;
+  }
+  .btn.btn-sm {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+.table-responsive {
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+/* transaction section end */
+</style>
