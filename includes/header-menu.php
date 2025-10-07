@@ -27,7 +27,7 @@
         </nav>
         <div class="header-icons">
             <a href="#" class="icon-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightLabel" aria-controls="offcanvasRightLabel" title="User">
-                <i class="fa-regular fa-user"></i> Account
+                <i class="fa-regular fa-user"></i> <span class="hide-in-mobile" > Account </span>
                 <span class="dropdown-toggle"></span>
             </a>
             <a href="login.php" title="Login">
@@ -40,10 +40,9 @@
     </div>
 </div>
 
-
 <div class="offcanvas offcanvas-end user-offcanvas" tabindex="-1" id="offcanvasRightLabel" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
-        <h5 class="offcanvas-title text-white" id="userMenuLabel"><i class="fa-regular fa-user"></i> Account</h5>
+        <h5 class="offcanvas-title text-white" id="userMenuLabel"><i class="fa-regular fa-user"></i>  Account</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">

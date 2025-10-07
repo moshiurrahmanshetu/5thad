@@ -181,7 +181,18 @@ body.offcanvas-backdrop {
     border-radius: 6px;
     transition: background 0.2s ease;
     border-bottom: 1px solid var(--ad-pr-cl);
+    background: #5a5c5c75;
+    margin-bottom: 5px;
 }
+.user-offcanvas .dropdown-item:hover {
+    background-color: var(--ad-pr-cl);
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+.hide-in-mobile{
+    display: none !important;
+}
+}
+
 /* Header Icons */
 .header-icons {
     display: flex;
