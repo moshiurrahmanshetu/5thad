@@ -1,6 +1,4 @@
-<?php
-// Footer Component
-?>
+
 <footer class="footer">
     <div class="container">
         <div class="row pb-4">
@@ -62,12 +60,8 @@
         </div>
     </div>
 </footer>
-<!-- Bootstrap JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Custom JavaScript -->
 <script src="assets/main.js"></script>
 <script src="assets/dashboard.js"></script>
-</body>
-</html>

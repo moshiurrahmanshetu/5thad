@@ -1,18 +1,26 @@
-<?php
-// User Dashboard Page
-?>
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Header Top Bar -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertiser Dashboard</title>
+    <meta name="description" content="Find the best freelancers and freelance jobs. Connect talented professionals with businesses worldwide.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/dashboard.css">
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+</head>
+
+<body>
+
     <?php include 'includes/header-topbar.php'; ?>
-
-    <!-- Header Menu -->
     <?php include 'includes/header-menu.php'; ?>
 
-    <!-- Dashboard Content -->
     <div class="dashboard-container">
         <div class="container-fluid">
             <div class="row">
-                <!-- Sidebar -->
                 <div class="col-lg-3 col-md-4">
                     <div class="dashboard-sidebar">
                         <div class="user-profile">
@@ -76,11 +84,8 @@
                         </nav>
                     </div>
                 </div>
-
-                <!-- Main Content -->
                 <div class="col-lg-9 col-md-8">
                     <div class="dashboard-content">
-                        <!-- Dashboard Header -->
                         <div class="dashboard-header">
                             <h1>Dashboard</h1>
                             <div class="dashboard-actions">
@@ -89,8 +94,6 @@
                                 </button>
                             </div>
                         </div>
-
-                        <!-- Stats Cards -->
                         <div class="dash-info-sec">
                             <div class="row mb-4">
                                 <div class="col-lg-3 col-md-6 mb-3">
@@ -143,7 +146,6 @@
                             </div>
                         </div>
 
-                        <!-- Recent Projects -->
                         <div class="dashboard-section">
                             <div class="section-header">
                                 <h2>Recent Projects</h2>
@@ -198,7 +200,6 @@
                             </div>
                         </div>
 
-                        <!-- Recent Messages -->
                         <div class="dashboard-section">
                             <div class="section-header">
                                 <h2>Recent Messages</h2>
@@ -246,5 +247,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <?php include 'includes/footer.php'; ?>
+</body>
+</html>

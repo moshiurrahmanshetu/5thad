@@ -1,17 +1,21 @@
-<?php
-// Main Homepage
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5ThAD - Connect Talent with Opportunity</title>
+    <meta name="description" content="Find the best freelancers and freelance jobs. Connect talented professionals with businesses worldwide.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+</head>
+<body>
 
-<!-- Header Top Bar -->
 <?php include 'includes/header-topbar.php'; ?>
-
-<!-- Header Menu -->
 <?php include 'includes/header-menu.php'; ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 
-<!-- Hero Section -->
 <section class="hero-section">
-    <!-- <div class="hero-overlay"></div> -->
     <div class="hero-content">
         <h1>Find Your Perfect Match</h1>
         <p>Connect with top freelancers or discover amazing opportunities. Whether you're hiring talent or looking for work, we've got you covered.</p>
@@ -22,7 +26,6 @@
     </div>
 </section>
 
-<!-- Stats Section -->
 <section class="infograph-section">
     <div class="container">
         <div class="row text-center">
@@ -78,7 +81,6 @@
     </div>
 </section>
 
-<!-- Features Section -->
 <section class="why-choose-section py-5" style="background-image: url('assets/why-choose-bg.jpg');">
     <div class="container">
         <div class="choose-section-top text-center">
@@ -125,7 +127,6 @@
     </div>
 </section>
 
-<!-- Grow Network Section -->
 <section class="grow-nt-section py-5">
     <div class="container">
         <div class="grow-nt-top text-center">
@@ -177,7 +178,6 @@
     </div>
 </section>
 
-<!-- Referral Section -->
 <section class="section referral-section">
     <div class="container">
         <div class="referral-content" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;">
@@ -199,7 +199,6 @@
     </div>
 </section>
 
-<!-- Payment Options Section -->
 <section class="section payment-section" style="position: relative; overflow: hidden;">
     <div class="container">
         <h2 style="text-align:center; font-weight:700; color:#2b2d42; margin-bottom: 10px;">Multiple Payment Options</h2>
@@ -347,6 +346,8 @@
   </div>
 </section>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+
 <script>
     const animations = [{
             id: 'ref-lottie',
@@ -440,17 +441,9 @@
     });
 
 
-    // function copyReferralLink() {
-    //     const input = document.querySelector('.referral-link');
-    //     input.select();
-    //     input.setSelectionRange(0, 99999);
-    //     document.execCommand('copy');
-    //     document.getElementById('copy-msg').style.display = 'inline';
-    //     setTimeout(() => {
-    //         document.getElementById('copy-msg').style.display = 'none';
-    //     }, 1500);
-    // }
 </script>
 
-<!-- Footer -->
 <?php include 'includes/footer.php'; ?>
+
+</body>
+</html>

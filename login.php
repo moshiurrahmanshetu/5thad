@@ -1,8 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <meta name="description" content="Find the best freelancers and freelance jobs. Connect talented professionals with businesses worldwide.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+</head>
+<body>
 
-    <!-- Header Top Bar -->
 <?php include 'includes/header-topbar.php'; ?>
-    
-    <!-- Header Menu -->
 <?php include 'includes/header-menu.php'; ?>
     
 <section class="login-section py-5">
@@ -55,5 +65,6 @@
     }
 </script>
 
-    <!-- Footer -->
-    <?php include 'includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
+</body>
+</html>

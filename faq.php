@@ -1,11 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Header Top Bar -->
-<?php include 'includes/header-topbar.php'; ?>
-    
-    <!-- Header Menu -->
-<?php include 'includes/header-menu.php'; ?>
-    
-  <!-- banner section start  -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Blogs</title>
+  <meta name="description" content="Find the best freelancers and freelance jobs. Connect talented professionals with businesses worldwide.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/icon.png">
+</head>
+
+<body>
+  <?php include 'includes/header-topbar.php'; ?>
+  <?php include 'includes/header-menu.php'; ?>
+
   <section class="all-banner">
     <div class="banner d-flex align-items-center justify-content-center"
       style="background-image: url(assets/faq.jpg);">
@@ -20,7 +30,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <p class="text-center mb-5" style="font-size: 18px;">Find answers to common questions about <a style="color: var(--ad-pr-cl-deep);" href="/" ><b> 5ThAD</b></a>, our products, and services.</p>
+          <p class="text-center mb-5" style="font-size: 18px;">Find answers to common questions about <a style="color: var(--ad-pr-cl-deep);" href="/"><b> 5ThAD</b></a>, our products, and services.</p>
           <div class="accordion" id="faqAccordion">
             <div class="accordion-item">
               <h3 class="accordion-header" id="faq1-heading">
@@ -86,7 +96,7 @@
               <h3 class="accordion-header" id="faq5-heading">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
-                 How do I withdraw my earnings?
+                  How do I withdraw my earnings?
                 </button>
               </h3>
               <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5-heading"
@@ -191,5 +201,6 @@
     </div>
   </section>
 
-<!-- Footer -->
-    <?php include 'includes/footer.php'; ?>
+  <?php include 'includes/footer.php'; ?>
+</body>
+</html>
