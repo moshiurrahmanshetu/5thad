@@ -20,12 +20,12 @@
                 <div class="footer-links">
                     <h4>Explore Us</h4>
                     <ul>
-                        <li><a href="about.php">About Us</a></li>
-                        <li><a href="blog.php">Blogs</a></li>
-                        <li><a href="privacy.php">Privacy Policy</a></li>
-                        <li><a href="terms.php">Terms of Service</a></li>
-                        <li><a href="faq.php">FAQ</a></li>
-                        <li><a href="contact.php">Contact Support</a></li>
+                        <li><a href="/about.php">About Us</a></li>
+                        <li><a href="/blog.php">Blogs</a></li>
+                        <li><a href="/privacy.php">Privacy Policy</a></li>
+                        <li><a href="/terms.php">Terms of Service</a></li>
+                        <li><a href="/faq.php">FAQ</a></li>
+                        <li><a href="/contact.php">Contact Support</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,7 +61,7 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="assets/main.js"></script>
 <script src="assets/dashboard.js"></script>

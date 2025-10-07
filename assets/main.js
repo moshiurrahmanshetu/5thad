@@ -87,6 +87,8 @@ $(document).ready(function () {
         }
     });
 
+    
+
     // Add animation to feature cards on scroll
     $(window).scroll(function () {
         $('.feature-card').each(function () {
@@ -100,6 +102,7 @@ $(document).ready(function () {
             }
         });
     });
+
 
     // Dropdown functionality for desktop
     $(document).ready(function () {
