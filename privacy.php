@@ -14,60 +14,92 @@
 
 <?php include 'includes/header-topbar.php'; ?>
 <?php include 'includes/header-menu.php'; ?>
- 
-<main class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-10">
-      <h1 class="mb-4 text-center">Privacy Policy</h1>
-      <p>At <strong>5thad</strong>, your privacy is very important to us. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our website and services.</p>
+ <div class="container py-5" style="background-color:#f9fafc;">
+  <div class="card shadow-lg border-0 rounded-4">
+    <div class="card-body p-5">
+      <h1 class="text-center mb-4" style="color:#0056b3;">Privacy Policy</h1>
+      <p class="text-muted text-center mb-5">
+        Last updated: <strong>October 2025</strong>
+      </p>
 
-      <h4 class="mt-4">1. Information We Collect</h4>
-      <ul>
-        <li><strong>Personal Information:</strong> Name, email, phone number, billing details, and other registration data.</li>
-        <li><strong>Non-Personal Information:</strong> Browser type, device information, IP address, and usage statistics collected via cookies and analytics tools.</li>
+      <h4 class="mb-3 text-primary">1. Introduction</h4>
+      <p>
+        Welcome to <strong>5thad</strong>. We value your privacy and are committed to protecting your
+        personal information. This Privacy Policy explains how we collect, use, and safeguard your
+        data when you use our platform and related services.
+      </p>
+
+      <h4 class="mt-4 mb-3 text-primary">2. Information We Collect</h4>
+      <ul style="line-height:1.8;">
+        <li><strong>Personal Information:</strong> Name, email address, phone number, payment details, etc.</li>
+        <li><strong>Usage Data:</strong> Pages visited, clicks, browser type, and other analytics data.</li>
+        <li><strong>Cookies:</strong> We use cookies to improve your browsing experience and show relevant ads.</li>
       </ul>
 
-      <h4 class="mt-4">2. How We Use Your Information</h4>
-      <ul>
-        <li>To provide and improve our services</li>
-        <li>To process payments and transactions</li>
-        <li>To send you notifications, updates, and promotional offers</li>
-        <li>To comply with legal obligations and prevent fraud</li>
+      <h4 class="mt-4 mb-3 text-primary">3. How We Use Your Information</h4>
+      <ul style="line-height:1.8;">
+        <li>To provide and maintain our services.</li>
+        <li>To process transactions and manage your account.</li>
+        <li>To communicate updates, offers, and notifications.</li>
+        <li>To enhance our website’s security and functionality.</li>
       </ul>
 
-      <h4 class="mt-4">3. Cookies</h4>
-      <p>We use cookies to enhance user experience, analyze traffic, and personalize content. You may disable cookies in your browser settings, but some features may not function properly.</p>
+      <h4 class="mt-4 mb-3 text-primary">4. Data Security</h4>
+      <p>
+        We implement industry-standard measures to protect your personal information from
+        unauthorized access, alteration, disclosure, or destruction. However, no online transmission
+        can be guaranteed 100% secure.
+      </p>
 
-      <h4 class="mt-4">4. Data Sharing and Disclosure</h4>
-      <p>We do not sell or rent your personal information. We may share your data only with trusted service providers who assist in operating our services, and when required by law.</p>
+      <h4 class="mt-4 mb-3 text-primary">5. Sharing Your Information</h4>
+      <p>
+        We do not sell your personal information. We may share data only with trusted partners and
+        service providers who assist us in operating our platform, provided they comply with strict
+        confidentiality obligations.
+      </p>
 
-      <h4 class="mt-4">5. Data Security</h4>
-      <p>We use industry-standard encryption and security practices to protect your data. However, no online system is completely secure, and we cannot guarantee absolute protection.</p>
+      <h4 class="mt-4 mb-3 text-primary">6. Cookies & Tracking</h4>
+      <p>
+        Cookies help us analyze traffic and personalize content. You can manage or disable cookies
+        in your browser settings, but some site functions may not work properly if you do.
+      </p>
 
-      <h4 class="mt-4">6. Your Rights</h4>
-      <ul>
-        <li>You may request access, correction, or deletion of your personal data.</li>
-        <li>You may opt out of promotional emails anytime by following the unsubscribe link.</li>
-      </ul>
+      <h4 class="mt-4 mb-3 text-primary">7. Your Rights</h4>
+      <p>
+        You have the right to access, update, or delete your personal information. To make such
+        requests, contact us via our support form or email.
+      </p>
 
-      <h4 class="mt-4">7. Third-Party Links</h4>
-      <p>Our website may contain links to third-party websites. We are not responsible for their privacy practices or content.</p>
+      <h4 class="mt-4 mb-3 text-primary">8. Changes to This Policy</h4>
+      <p>
+        We may update this Privacy Policy periodically. Any changes will be posted on this page with
+        an updated “Last Updated” date.
+      </p>
 
-      <h4 class="mt-4">8. Data Retention</h4>
-      <p>We retain personal data only for as long as necessary to fulfill the purposes outlined in this policy or as required by law.</p>
-
-      <h4 class="mt-4">9. Updates to This Policy</h4>
-      <p>We may update our Privacy Policy occasionally. Updates will be posted on this page with the revised date. Please review this page regularly.</p>
-
-      <h4 class="mt-4">10. Contact Us</h4>
-      <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:support@5thad.com">support@5thad.com</a>.</p>
-
-      <p class="mt-4"><em>Last Updated: <?php echo date("F j, Y"); ?></em></p>
+      <h4 class="mt-4 mb-3 text-primary">9. Contact Us</h4>
+      <p>
+        For any questions regarding this Privacy Policy, please contact our support team at
+        <a href="mailto:support@5thad.com" class="text-decoration-none fw-semibold" style="color:#007bff;">support@5thad.com</a>.
+      </p>
     </div>
   </div>
-</main>
-
+</div>
 
 <?php include 'includes/footer.php'; ?>
 </body>
 </html>
+<style>
+  body {
+    background-color: #eef2f7;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+  }
+  h4 {
+    font-weight: 600;
+  }
+  ul li::marker {
+    color: #007bff;
+  }
+</style>

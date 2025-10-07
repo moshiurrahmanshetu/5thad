@@ -198,20 +198,18 @@
               </div>
             </div>
 
-          </div> <!-- /.accordion -->
+          </div>
 
-          <!-- Agree CTA -->
           <div class="d-flex justify-content-between align-items-center mt-4">
             <div class="muted-small">By using this site you agree to the terms above.</div>
             <div>
-              <a href="index.php" class="btn btn-outline-secondary me-2"><i class="fa fa-check-circle me-1"></i> Agree & Continue</a>
+              <a href="/" class="btn btn-outline-secondary me-2"><i class="fa fa-check-circle me-1"></i> Agree & Continue</a>
               <a href="contact.php" class="btn btn-outline-secondary"><i class="fa fa-envelope me-1"></i> Contact Us</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Right: Table of Contents / Summary -->
       <div class="col-lg-4">
         <div class="card p-3 shadow-soft toc">
           <h6 class="mb-3">Quick Navigation</h6>
@@ -251,7 +249,6 @@
 
 <style>
   
-/* terms and conditions page css start  */
   .terms-hero{
     background: linear-gradient(135deg, rgba(18,65,112,0.95) 0%, rgba(39,55,77,0.85) 100%);
     color: #fff;
@@ -278,9 +275,7 @@
   @media (max-width: 991px) {
     .toc { position: static; margin-top: 1rem; }
   }
-
   .terms-list li { margin-bottom: .5rem; }
 
-/* terms and conditions page css end  */
 
 </style>
