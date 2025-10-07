@@ -120,6 +120,13 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    background: var(--ad-pr-cl);
+    border: none;
+    transition: background 0.2s ease;
+    color: var(--ad-black);
+}
+.dashboard-actions .btn:hover{
+    background: var(--ad-pr-cl-deep);
 }
 .stat-card {
     background: var(--ad-light);
