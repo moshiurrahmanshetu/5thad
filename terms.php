@@ -15,53 +15,272 @@
 <?php include 'includes/header-topbar.php'; ?>
 <?php include 'includes/header-menu.php'; ?>
  
-<main class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-10">
-      <h1 class="mb-4 text-center">Terms & Conditions</h1>
-      <p>Welcome to <strong>5thad</strong>. By accessing or using our platform, you agree to comply with and be bound by the following Terms and Conditions. Please read them carefully before using our services.</p>
 
-      <h4 class="mt-4">1. Acceptance of Terms</h4>
-      <p>By registering, accessing, or using <strong>5thad</strong>, you confirm that you have read, understood, and agree to be bound by these Terms. If you do not agree, please discontinue using our platform.</p>
-
-      <h4 class="mt-4">2. Description of Service</h4>
-      <p><strong>5thad</strong> provides an online platform that connects Advertisers and Publishers for digital advertising campaigns, including content promotion, banner ads, and related marketing services.</p>
-
-      <h4 class="mt-4">3. Account Registration</h4>
-      <p>Users are required to create an account to access certain features. You agree to provide accurate, complete, and updated information during registration. You are responsible for maintaining the confidentiality of your account credentials.</p>
-
-      <h4 class="mt-4">4. User Obligations</h4>
-      <ul>
-        <li>Do not use our services for any unlawful or fraudulent activity.</li>
-        <li>Do not upload, post, or distribute harmful, offensive, or misleading content.</li>
-        <li>Do not interfere with the platform’s functionality, security, or other users.</li>
-      </ul>
-
-      <h4 class="mt-4">5. Payment and Refunds</h4>
-      <p>All payments made through <strong>5thad</strong> are processed securely. Refund requests, if any, will be reviewed based on our refund policy and applicable conditions.</p>
-
-      <h4 class="mt-4">6. Intellectual Property Rights</h4>
-      <p>All logos, graphics, designs, and content on <strong>5thad</strong> are owned by us or our partners. You are not permitted to copy, modify, or reuse any materials without written consent.</p>
-
-      <h4 class="mt-4">7. Limitation of Liability</h4>
-      <p><strong>5thad</strong> shall not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use our services.</p>
-
-      <h4 class="mt-4">8. Suspension or Termination</h4>
-      <p>We reserve the right to suspend or terminate your access to <strong>5thad</strong> if we believe you have violated these Terms or engaged in harmful activities.</p>
-
-      <h4 class="mt-4">9. Changes to Terms</h4>
-      <p><strong>5thad</strong> may update these Terms & Conditions at any time. Updates will be effective once published on this page. Please review them periodically.</p>
-
-      <h4 class="mt-4">10. Governing Law</h4>
-      <p>These Terms are governed by and construed in accordance with the laws of Bangladesh. Any disputes will be subject to the jurisdiction of the courts located in Dhaka, Bangladesh.</p>
-
-      <h4 class="mt-4">11. Contact Information</h4>
-      <p>If you have any questions about these Terms, please contact us at <a href="mailto:support@5thad.com">support@5thad.com</a>.</p>
+  <!-- Hero -->
+  <section class="terms-hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h3 class="fw-bold mb-2"><i class="fa fa-file-contract me-2"></i> Terms & Conditions</h3>
+          <p class="lead mb-0">Please read these terms carefully. They set out the rules for using Meser (the “Service”). By using our Service you agree to these terms.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <div class="d-inline-block text-start shadow-soft p-3 rounded">
+            <div class="small text-white">Last updated</div>
+            <div class="h5 mb-0"><?php echo date('F j, Y'); ?></div>
+            <div class="muted-small">Please check periodically for changes.</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</main>
+  </section>
 
+  <!-- Main content -->
+  <main class="container my-5">
+    <div class="row g-4">
+
+      <!-- Left: Terms content -->
+      <div class="col-lg-8">
+        <div class="card p-4 shadow-soft terms-section">
+          <div class="mb-3">
+            <span class="badge bg-secondary"><i class="fa fa-info-circle me-1"></i> Agreement</span>
+          </div>
+
+          <p class="muted-small">
+            These Terms & Conditions govern your access to and use of Meser. By accessing or using the Service you agree to be bound by these Terms. If you do not agree, please do not use the Service.
+          </p>
+
+          <!-- Accordion for sections -->
+          <div class="accordion mt-4" id="termsAccordion">
+
+            <!-- 1. Use of the Service -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  1. Use of the Service
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                <div class="accordion-body">
+                  <p>Users must use the Service lawfully and in accordance with these Terms. You agree not to misuse the Service, interfere with other users, or attempt to gain unauthorized access to our systems.</p>
+                  <ul class="terms-list">
+                    <li>Keep your account information secure;</li>
+                    <li>Provide accurate information when required;</li>
+                    <li>Respect other users and our community guidelines.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. User Responsibilities -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                  2. User Responsibilities
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                <div class="accordion-body">
+                  <p>Users are responsible for their actions when using the Service. You must not post illegal content, infringe others’ rights, or use the Service for malicious purposes.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Intellectual Property -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                  3. Intellectual Property
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                <div class="accordion-body">
+                  <p>All content on the Service (text, images, logos, code) is owned by Meser or licensed to Meser. You may not copy, reproduce, publish or create derivative works without our permission.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Payments & Refunds -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                  4. Payments & Refunds
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                <div class="accordion-body">
+                  <p>If the Service includes paid features, payment terms, billing cycles, and refund policy will be explained at checkout. Refunds are provided according to the policy posted at the time of purchase.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Privacy -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                  5. Privacy
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                <div class="accordion-body">
+                  <p>Your privacy is important. Our Privacy Policy explains how we collect, use, and share your personal data. By using the Service you also agree to our Privacy Policy.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Limitation of Liability -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                  6. Limitation of Liability
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                <div class="accordion-body">
+                  <p>To the maximum extent permitted by law, Meser will not be liable for indirect, special, incidental, or consequential damages arising from your use of the Service.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Termination -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                  7. Termination
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                <div class="accordion-body">
+                  <p>We may suspend or terminate accounts that violate these Terms. Upon termination, your right to use the Service ceases immediately.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Governing Law -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                  8. Governing Law
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                <div class="accordion-body">
+                  <p>These Terms are governed by the laws of the country where Meser operates. Any disputes will be subject to the exclusive jurisdiction of the competent courts.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Changes to Terms -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                  9. Changes to Terms
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                <div class="accordion-body">
+                  <p>We may modify these Terms from time to time. We will post the updated Terms with a new "Last updated" date. Continued use of the Service after changes constitutes acceptance of the new Terms.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10. Contact -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
+                  10. Contact
+                </button>
+              </h2>
+              <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+                <div class="accordion-body">
+                  <p>If you have questions about these Terms, please contact us at <a href="mailto:info@example.com">info@example.com</a> or through our <a href="contact.php">Contact page</a>.</p>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- /.accordion -->
+
+          <!-- Agree CTA -->
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <div class="muted-small">By using this site you agree to the terms above.</div>
+            <div>
+              <a href="index.php" class="btn btn-outline-secondary me-2"><i class="fa fa-check-circle me-1"></i> Agree & Continue</a>
+              <a href="contact.php" class="btn btn-outline-secondary"><i class="fa fa-envelope me-1"></i> Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Table of Contents / Summary -->
+      <div class="col-lg-4">
+        <div class="card p-3 shadow-soft toc">
+          <h6 class="mb-3">Quick Navigation</h6>
+          <nav class="nav flex-column">
+            <a class="nav-link py-1" href="#collapseOne" onclick="document.getElementById('collapseOne')?.scrollIntoView({behavior:'smooth'})"><i class="fa fa-angle-right me-2"></i> Use of the Service</a>
+            <a class="nav-link py-1" href="#collapseTwo"><i class="fa fa-angle-right me-2"></i> User Responsibilities</a>
+            <a class="nav-link py-1" href="#collapseThree"><i class="fa fa-angle-right me-2"></i> Intellectual Property</a>
+            <a class="nav-link py-1" href="#collapseFour"><i class="fa fa-angle-right me-2"></i> Payments & Refunds</a>
+            <a class="nav-link py-1" href="#collapseFive"><i class="fa fa-angle-right me-2"></i> Privacy</a>
+            <a class="nav-link py-1" href="#collapseSix"><i class="fa fa-angle-right me-2"></i> Limitation of Liability</a>
+            <a class="nav-link py-1" href="#collapseSeven"><i class="fa fa-angle-right me-2"></i> Termination</a>
+            <a class="nav-link py-1" href="#collapseEight"><i class="fa fa-angle-right me-2"></i> Governing Law</a>
+            <a class="nav-link py-1" href="#collapseNine"><i class="fa fa-angle-right me-2"></i> Changes</a>
+            <a class="nav-link py-1" href="#collapseTen"><i class="fa fa-angle-right me-2"></i> Contact</a>
+          </nav>
+
+          <hr />
+
+          <div class="small text-muted">
+            <strong>Summary</strong>
+            <p class="mb-0">This page explains rules for using Meser: user obligations, IP rights, payments, privacy, liability limits and how changes are handled.</p>
+          </div>
+        </div>
+
+        <!-- Helpful card -->
+        <div class="card mt-3 p-3 shadow-soft">
+          <h6><i class="fa fa-shield-halved me-2"></i> Safety & Security</h6>
+          <p class="small text-muted mb-0">Keep your account details private. Report suspicious activity to our support team immediately.</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
 <?php include 'includes/footer.php'; ?>
 </body>
 </html>
+
+<style>
+  
+/* terms and conditions page css start  */
+  .terms-hero{
+    background: linear-gradient(135deg, rgba(18,65,112,0.95) 0%, rgba(39,55,77,0.85) 100%);
+    color: #fff;
+    padding: 48px 0;
+  }
+  .terms-hero .lead{ color: rgba(255,255,255,0.92); }
+  .terms-section h5 {
+    font-weight: 600;
+    color: var(--ad-sec-cl);
+  }
+  .shadow-soft { box-shadow: 0 6px 20px rgba(39,55,77,0.06); border-radius: 12px; }
+  .muted-small { color: var(--muted); font-size: .95rem; }
+  .agree-btn { background: var(--accent); border-color: var(--accent); color: #000000; }
+  .agree-btn:hover { filter: brightness(.95); }
+  .shadow-soft .nav a {
+    color: var(--ad-sec-cl);
+    transition: 0.3s all ease-in-out;
+  }
+.shadow-soft .nav a:hover {
+  margin-left: 5px;
+  text-shadow: 2px 3px 4px #0000006e;
+}
+
+  @media (max-width: 991px) {
+    .toc { position: static; margin-top: 1rem; }
+  }
+
+  .terms-list li { margin-bottom: .5rem; }
+
+/* terms and conditions page css end  */
+
+</style>
